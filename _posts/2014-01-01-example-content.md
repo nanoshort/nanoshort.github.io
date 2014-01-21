@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Example content
-image: /media/2014/bg.png
+image: /media/2014-01-01-example-content/bg.png
 video: true
-video_webm: /media/2014/b_bang_splash.webm 
-video_ogv: /media/2014/b_bang_splash.ogv
-video_mp4: /media/2014/b_bang_splash.mp4
+video_webm: /media/2014-01-01-example-content/b_bang_splash.webm 
+video_ogv: /media/2014-01-01-example-content/b_bang_splash.ogv
+video_mp4: /media/2014-01-01-example-content/b_bang_splash.mp4
 ---
 
 

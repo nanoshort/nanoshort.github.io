@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Making application's icon smaller on GNOME Shell's top panel
-image: /media/images/morning.jpg
+image: /media/2013-11-19-making-applications-icon-smaller-on-gnome-shells-top-panel/morning.jpg
 quote: Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
 dark: true
 ---
@@ -63,5 +63,5 @@ The changes on the css are small so you just need to open it with your favorite 
 Now, you just need to restart gnome-shell (press ALT + F2 and type r + ENTER) and it's done.
 
 This is how it (plus another tweaks on gnome-shell.css) made my desktop looks like:
-![My desktop today](/media/images/Captura_de_tela_de_2013_11_19_13_12_42.png)
+![My desktop today](/media/2013-11-19-making-applications-icon-smaller-on-gnome-shells-top-panel/Captura_de_tela_de_2013_11_19_13_12_42.png)
 If you have any suggestion or feedback, please contact me [via Google+](http://google.com/+IanCamporezBrunelli). Thank you!
