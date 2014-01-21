@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Making application's icon smaller on GNOME Shell's top panel
-image: /media/2013-11-19-making-applications-icon-smaller-on-gnome-shells-top-panel/Mesh4.png
+image: /media/2013-11-19-making-applications-icon-smaller-on-gnome-shells-top-panel/mesh.png
 quote: I'm a huge fan of GNOME Shell. Using it since the release of version 3.0, is great to see how things has been polished.
 dark: false
 ---
