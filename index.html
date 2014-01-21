@@ -4,12 +4,7 @@ title: Home
 ---
 
 <header class="clean" style="background-image: url({{ site.cover }});">
-	<div class="social-links">
-		<a href="https://twitter.com/iancamporez" target="_blank" title="Twitter"><span class="genericon genericon-twitter"></span></a>
-		<a href="https://github.com/camporez" target="_blank" title="Github"><span class="genericon genericon-github"></span></a>
-		<a href="https://google.com/+IanCamporezBrunelli" target="_blank" title="Google+"><span class="genericon genericon-googleplus-alt"></span></a>
-		<a href="#" target="_blank" title="Subscribe to RSS"><span class="genericon genericon-feed"></span></a>
-	</div>
+	{% include social.html %}
 	<div id="post-title">
 		<h1>{{ site.title }}</h1>
 		<a href="{{ site.url }}"><img src="{{ site.icon }}" class="site-icon">{{ site.title }}</a></a>
