@@ -272,6 +272,9 @@ pre {
 	word-break: break-all;
 	word-wrap: break-word;
 	background-color: #f9f9f9;
+	margin: 50px 0px 0px -20px;
+	color: #7a7a7a;
+	border-left: 10px solid #F6DF6A;
 }
 
 pre code {
@@ -292,9 +295,9 @@ pre code {
 
 blockquote {
 	padding: .5rem 1rem;
-	margin: 50px -20px 0 0;
+	margin: 50px 0px 0px -20px;
 	color: #7a7a7a;
-	border-left: 10px solid #e5e5e5;
+	border-left: 10px solid #C7F66A;
 }
 
 #article blockquote p {

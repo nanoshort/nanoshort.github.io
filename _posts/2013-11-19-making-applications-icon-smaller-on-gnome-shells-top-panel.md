@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Making application's icon smaller on GNOME Shell's top panel
-image: /media/2013-11-19-making-applications-icon-smaller-on-gnome-shells-top-panel/morning.jpg
-quote: Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
-dark: true
+image: /media/2013-11-19-making-applications-icon-smaller-on-gnome-shells-top-panel/Mesh5.png
+quote: I'm a huge fan of GNOME Shell. Using it since the release of version 3.0, is great to see how things has been polished.
+dark: false
 ---
 
 I'm a huge fan of GNOME Shell. Using it since the release of version 3.0, is great to see how things has been polished. However, one of the things that always annoyed me is the app icon on the top bar, because it's unnecessarily big, in my opinion.
@@ -24,7 +24,7 @@ The files you'll have to change are:
 
 On *panel.js*, you will need to apply the following patch:
 
-{% highlight diff linenos %}
+{% highlight diff %}
 295c295
 <         let icon = this._targetApp.get_faded_icon(2 * PANEL_ICON_SIZE, this._iconBox.text_direction);
 ---
@@ -52,13 +52,13 @@ You can change these lines manually, or download the diff [here](http://cloud.ca
 
 The changes on the css are small so you just need to open it with your favorite editor and add the line `padding-left: 10px;` to the selector `#appMenu`, like this:
 
-```
+{% highlight css %}
 #appMenu {
     spinner-image: url("process-working.svg");
     spacing: 4px;
     padding-left: 10px;
 }
-```
+{% endhighlight %}
 
 Now, you just need to restart gnome-shell (press ALT + F2 and type r + ENTER) and it's done.
 
