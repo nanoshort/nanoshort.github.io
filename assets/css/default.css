@@ -111,6 +111,22 @@ img.site-icon {
 	text-decoration: underline;
 }
 
+#home-title {
+	width: 700px;
+	height: 350px;
+	text-align: center;
+	left: 50%;
+	margin-left: -350px;
+	position: absolute;
+	z-index: 1;
+}
+
+#home-title img {
+	width: 150px;
+	border-radius: 50%;
+	margin-top: 100px;
+}
+
 #gotoarticle {
 	bottom: 50px;
 	width: 50px;
