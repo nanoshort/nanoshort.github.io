@@ -1,0 +1,55 @@
+---
+layout: default
+---
+
+<header class="{% if page.dark %}dark{% else %}clean{% endif %}" style="background-image: url({% if page.image %}{{ page.image }}{% else %}{{ site.cover }}{% endif %});">
+	{% if page.video %}
+		<video id="bg-video" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
+			{% if page.video_webm %}<source src="{{ page.video_webm }}" type="video/webm">{% endif %}
+			{% if page.video_ogv %}<source src="{{ page.video_ogv }}" type="video/ogg ogv">{% endif %}
+			{% if page.video_mp4 %}<source src="{{ page.video_mp4 }}" type="video/mp4">{% endif %}
+		</video>
+		<div id="bg-video-pattern"></div>
+	{% endif %}
+	<div class="social-links">
+		<a href="https://twitter.com/iancamporez" target="_blank" title="Twitter"><span class="genericon genericon-twitter"></span></a>
+		<a href="https://github.com/camporez" target="_blank" title="Github"><span class="genericon genericon-github"></span></a>
+		<a href="https://google.com/+IanCamporezBrunelli" target="_blank" title="Google+"><span class="genericon genericon-googleplus-alt"></span></a>
+		<a href="#" target="_blank" title="Subscribe to RSS"><span class="genericon genericon-feed"></span></a>
+	</div>
+	<div id="post-title">
+		<h1>{{ page.title }}</h1>
+		{% if page.quote %}
+			<h2>{{ page.quote }}</h2>
+		{% endif %}
+		<a href="{{ site.url }}"><img src="{{ site.icon }}" class="site-icon">{{ site.title }}</a> // {{ page.date | date: "%-d de "}}{% assign m = page.date | date: "%-m" %}{% case m %}{% when '1' %}janeiro{% when '2' %}fevereiro{% when '3' %}março{% when '4' %}abril{% when '5' %}maio{% when '6' %}junho{% when '7' %}julho{% when '8' %}agosto{% when '9' %}setembro{% when '10' %}outubro{% when '11' %}novembro{% when '12' %}dezembro{% endcase %}{{ page.date | date: " de %Y" }}</a>
+	</div>
+	<div id="gotoarticle">
+		<a class="scroll" data-speed="1000" href="#article"><span class="genericon genericon-expand"></span></a>
+	</div>
+</header>
+<div id="article">
+	{{ content }}
+</div>
+{% for post in site.related_posts limit:1 %}
+<footer class="{% if post.dark %}dark{% else %}clean{% endif %}" style="background-image: url({% if post.image %}{{ post.image }}{% else %}{{ site.cover }}{% endif %});">
+	<div id="backtoarticle">
+		<a class="scroll" data-speed="1000" href="#article"><span class="genericon genericon-collapse"></span></a>
+	</div>
+	<div id="featured-title">
+		<h3>Em destaque</h3>
+		<a href="{{ post.url }}">
+			<h1>{{ post.title }}</h1>
+			{% if post.quote %}
+				<h2>{{ post.quote }}</h2>
+			{% endif %}
+		</a>
+	</div>
+	<div id="copyright">
+		<p>&copy;2014, <a href="http://camporez.com" target="_blank">{{ site.title }}</a>. <a href="http://creativecommons.org/licenses/by-nc/2.5/br/" target="_blank">Alguns direitos reservados</a>.</p>
+	</div>
+</footer>
+{% endfor %}
+<script src="/assets/js/smooth-scroll.js"></script>
+  </ul>
+</div>

@@ -1,0 +1,43 @@
+---
+layout: default
+title: Home
+---
+
+<header class="clean" style="background-image: url({{ site.cover }});">
+	<div class="social-links">
+		<a href="https://twitter.com/iancamporez" target="_blank" title="Twitter"><span class="genericon genericon-twitter"></span></a>
+		<a href="https://github.com/camporez" target="_blank" title="Github"><span class="genericon genericon-github"></span></a>
+		<a href="https://google.com/+IanCamporezBrunelli" target="_blank" title="Google+"><span class="genericon genericon-googleplus-alt"></span></a>
+		<a href="#" target="_blank" title="Subscribe to RSS"><span class="genericon genericon-feed"></span></a>
+	</div>
+	<div id="post-title">
+		<h1>{{ site.title }}</h1>
+		<a href="{{ site.url }}"><img src="{{ site.icon }}" class="site-icon">{{ site.title }}</a></a>
+	</div>
+</header>
+<div id="article">
+	{% for post in paginator.posts %}
+		<div class="post">
+			<h1 class="post-title">	<a href="{{ post.url }}">{{ post.title }}</a></h1>
+			<span class="post-date">{{ post.date | date_to_string }}</span>
+			{{ post.content | strip_html | truncatewords:75 }}
+		</div>
+	{% endfor %}
+</div>
+
+<div class="pagination">
+  {% if paginator.next_page %}
+    <a class="pagination-item older" href="/page{{paginator.next_page}}">Older</a>
+  {% else %}
+    <span class="pagination-item older">Older</span>
+  {% endif %}
+  {% if paginator.previous_page %}
+    {% if paginator.page == 2 %}
+      <a class="pagination-item newer" href="/">Newer</a>
+    {% else %}
+      <a class="pagination-item newer" href="/page{{paginator.previous_page}}">Newer</a>
+    {% endif %}
+  {% else %}
+    <span class="pagination-item newer">Newer</span>
+  {% endif %}
+</div>
