@@ -13,7 +13,7 @@ A long time ago I found [this good tutorial](http://www.gregfreeman.org/2011/rem
 
 So, after a lot of unsuccessful tentatives on changing *gnome-shell.css*, I realized that this setup is made with *javascript*, and not just *css*, and I decided to write this small tutorial.
 
-**Disclaimer**: the following procedures were made on version 3.10 of gnome-shell. I don't guarantee that it'll work in previous versions, neither in later versions, nor even in version 3.10, and I'm not responsible for possible damage to your system.
+<div class="message"><strong>Disclaimer</strong>: the following procedures were made on version 3.10 of gnome-shell. I don't guarantee that it'll work in previous versions, neither in later versions, nor even in version 3.10, and I'm not responsible for possible damage to your system.</div>
 
 The files you'll have to change are:
 

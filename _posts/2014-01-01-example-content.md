@@ -1,14 +1,16 @@
 ---
 layout: post
 title: Example content
-quote: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+quote: Aenean lacinia bibendum nulla sed consectetur.
 image: /media/2014-01-01-example-content/bg-image.png
 video_pattern: false
 video: true
 video_mp4: /media/2014-01-01-example-content/bg-video.mp4
 ---
 
-<p class="message">Howdy! This is an example blog post that shows several types of HTML content supported in this theme.</p>
+Morbi at metus vitae felis fringilla aliquet. Donec in arcu sit amet nisi fermentum volutpat sed non metus. Curabitur sed dui nisi. Etiam vel nulla libero.
+
+<div class="message">Howdy! This is an example blog post that shows several types of HTML content supported in this theme.</div>
 
 Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. *Aenean eu leo quam.* Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
 
