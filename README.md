@@ -1,2 +1,2 @@
-camporez.github.io
+Camporez, powered by Thinny 2.
 ==================

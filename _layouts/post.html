@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<header class="{% if page.dark %}dark{% else %}clean{% endif %}" style="background-image: url({% if page.image %}{{ page.image }}{% else %}{{ site.cover }}{% endif %});{% if page.background_position %} background-position: {{ page.background_position }};{% endif %}">
+<header class="{% if page.dark %}dark{% else %}clean{% endif %}" style="background-image: url({% if page.image %}{{ page.image }}{% else %}{{ site.cover }}{% endif %});{% if page.background_position %} background-position: {{ page.background_position }};{% endif %}height: 100%;">
 	{% if page.video %}
 		<video id="bg-video" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
 			{% if page.video_webm %}<source src="{{ page.video_webm }}" type="video/webm">{% endif %}
@@ -12,12 +12,12 @@ layout: default
 		{% if page.video_pattern %}<div id="bg-video-pattern"></div>{% endif %}
 	{% endif %}
 	{% include social.html %}
-	<div id="post-title">
+	<div id="post-info">
 		<h1>{{ page.title }}</h1>
 		{% if page.quote %}
 			<h2>{{ page.quote }}</h2>
 		{% endif %}
-		<a href="{{ site.url }}"><img src="{{ site.icon }}" class="site-icon">{{ site.title }}</a>, em {{ page.date | date: "%-d de "}}{% assign m = page.date | date: "%-m" %}{% case m %}{% when '1' %}janeiro{% when '2' %}fevereiro{% when '3' %}março{% when '4' %}abril{% when '5' %}maio{% when '6' %}junho{% when '7' %}julho{% when '8' %}agosto{% when '9' %}setembro{% when '10' %}outubro{% when '11' %}novembro{% when '12' %}dezembro{% endcase %}{{ page.date | date: " de %Y" }}</a>
+		<a class="site-title" href="{{ site.url }}"><img src="{{ site.icon }}" class="site-icon-small">{{ site.title }}</a>, em {{ page.date | date: "%-d de "}}{% assign m = page.date | date: "%-m" %}{% case m %}{% when '1' %}janeiro{% when '2' %}fevereiro{% when '3' %}março{% when '4' %}abril{% when '5' %}maio{% when '6' %}junho{% when '7' %}julho{% when '8' %}agosto{% when '9' %}setembro{% when '10' %}outubro{% when '11' %}novembro{% when '12' %}dezembro{% endcase %}{{ page.date | date: " de %Y" }}
 	</div>
 	<div id="gotoarticle">
 		<a class="scroll" data-speed="1000" href="#article"><span class="genericon genericon-expand"></span></a>
@@ -27,11 +27,11 @@ layout: default
 	{{ content }}
 </div>
 {% for post in site.related_posts limit:1 %}
-<footer class="{% if post.dark %}dark{% else %}clean{% endif %}" style="background-image: url({% if post.image %}{{ post.image }}{% else %}{{ site.cover }}{% endif %});{% if post.background_position %} background-position: {{ post.background_position }};{% endif %}">
+<footer class="{% if post.dark %}dark{% else %}clean{% endif %}" style="background-image: url({% if post.image %}{{ post.image }}{% else %}{{ site.cover }}{% endif %});{% if post.background_position %} background-position: {{ post.background_position }};{% endif %}height: 75%; min-height: 500px;">
 	<div id="backtoarticle">
 		<a class="scroll" data-speed="1000" href="#article"><span class="genericon genericon-collapse"></span></a>
 	</div>
-	<div id="featured-title">
+	<div id="post-info">
 		<h3>Em destaque</h3>
 		<a href="{{ post.url }}">
 			<h1>{{ post.title }}</h1>
@@ -40,9 +40,7 @@ layout: default
 			{% endif %}
 		</a>
 	</div>
-	<div id="copyright">
-		<p>&copy;2014, <a href="http://camporez.com" target="_blank">{{ site.title }}</a>. <a href="http://creativecommons.org/licenses/by-nc/2.5/br/" target="_blank">Alguns direitos reservados</a>.</p>
-	</div>
+	<p class="copyright">&copy;2014, <a href="http://camporez.com" target="_blank">{{ site.title }}</a>. <a href="http://creativecommons.org/licenses/by-nc/2.5/br/" target="_blank">Alguns direitos reservados</a>.</p>
 </footer>
 {% endfor %}
 <script src="/assets/js/smooth-scroll.js"></script>
