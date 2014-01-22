@@ -8,9 +8,7 @@ video: true
 video_mp4: /media/2014-01-01-example-content/bg-video.mp4
 ---
 
-<div class="message">
-  Howdy! This is an example blog post that shows several types of HTML content supported in this theme.
-</div>
+<p class="message">Howdy! This is an example blog post that shows several types of HTML content supported in this theme.</p>
 
 Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. *Aenean eu leo quam.* Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
 
