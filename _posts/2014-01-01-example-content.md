@@ -1,13 +1,12 @@
 ---
 layout: post
 title: Example content
-image: /media/2014-01-01-example-content/bg.png
+quote: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+image: /media/2014-01-01-example-content/bg-image.png
+video_pattern: false
 video: true
-video_webm: /media/2014-01-01-example-content/b_bang_splash.webm 
-video_ogv: /media/2014-01-01-example-content/b_bang_splash.ogv
-video_mp4: /media/2014-01-01-example-content/b_bang_splash.mp4
+video_mp4: /media/2014-01-01-example-content/bg-video.mp4
 ---
-
 
 <div class="message">
   Howdy! This is an example blog post that shows several types of HTML content supported in this theme.

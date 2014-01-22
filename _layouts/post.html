@@ -9,7 +9,7 @@ layout: default
 			{% if page.video_ogv %}<source src="{{ page.video_ogv }}" type="video/ogg ogv">{% endif %}
 			{% if page.video_mp4 %}<source src="{{ page.video_mp4 }}" type="video/mp4">{% endif %}
 		</video>
-		<div id="bg-video-pattern"></div>
+		{% if page.video_pattern %}<div id="bg-video-pattern"></div>{% endif %}
 	{% endif %}
 	{% include social.html %}
 	<div id="post-title">
@@ -27,7 +27,7 @@ layout: default
 	{{ content }}
 </div>
 {% for post in site.related_posts limit:1 %}
-<footer class="{% if post.dark %}dark{% else %}clean{% endif %}" style="background-image: url({% if post.image %}{{ post.image }}{% else %}{{ site.cover }}{% endif %});">
+<footer class="{% if post.dark %}dark{% else %}clean{% endif %}" style="background-image: url({% if post.image %}{{ post.image }}{% else %}{{ site.cover }}{% endif %});{% if post.background_position %} background-position: {{ post.background_position }};{% endif %}">
 	<div id="backtoarticle">
 		<a class="scroll" data-speed="1000" href="#article"><span class="genericon genericon-collapse"></span></a>
 	</div>

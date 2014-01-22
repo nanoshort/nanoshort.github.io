@@ -24,15 +24,17 @@ html, body, header {
 	height: 100%;
 }
 
-h1 {
+#article h1 {
+	margin-top: 50px;
 	font-size: 36px;
 }
 
-h2 {
+#article h2 {
+	margin-top: 50px;
 	font-size: 30px;
 }
 
-h3 {
+#article h3 {
 	margin-top: 50px;
 	font-size: 24px;
 }
@@ -166,6 +168,7 @@ img.site-icon {
 }
 
 #article p {
+	color: #515151;
 	line-height: 30px;
 	padding-top: 30px;
 }
@@ -293,11 +296,15 @@ pre code {
 	margin-bottom: 0;
 }
 
-blockquote {
+blockquote, .message {
 	padding: .5rem 1rem;
 	margin: 50px 0px 0px -20px;
 	color: #7a7a7a;
 	border-left: 10px solid #C7F66A;
+}
+
+.message {
+	border-left: 10px solid #F66A81;
 }
 
 #article blockquote p {
@@ -309,7 +316,6 @@ blockquote p:last-child {
 }
 
 table {
-	margin-bottom: 1rem;
 	width: 100%;
 	border: 1px solid #e5e5e5;
 	border-collapse: collapse;
@@ -322,4 +328,11 @@ td, th {
 
 tbody tr:nth-child(odd) td, tbody tr:nth-child(odd) th {
 	background-color: #f9f9f9;
+}
+
+dt {
+	font-weight: bold;
+}
+dd {
+	margin-left: 8px;
 }
