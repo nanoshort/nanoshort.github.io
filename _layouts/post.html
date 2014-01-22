@@ -17,7 +17,7 @@ layout: default
 		{% if page.quote %}
 			<h2>{{ page.quote }}</h2>
 		{% endif %}
-		<a href="{{ site.url }}"><img src="{{ site.icon }}" class="site-icon">{{ site.title }}</a> [{{ page.date | date: "%-d de "}}{% assign m = page.date | date: "%-m" %}{% case m %}{% when '1' %}janeiro{% when '2' %}fevereiro{% when '3' %}março{% when '4' %}abril{% when '5' %}maio{% when '6' %}junho{% when '7' %}julho{% when '8' %}agosto{% when '9' %}setembro{% when '10' %}outubro{% when '11' %}novembro{% when '12' %}dezembro{% endcase %}{{ page.date | date: " de %Y" }}]</a>
+		<a href="{{ site.url }}"><img src="{{ site.icon }}" class="site-icon">{{ site.title }}</a>, em {{ page.date | date: "%-d de "}}{% assign m = page.date | date: "%-m" %}{% case m %}{% when '1' %}janeiro{% when '2' %}fevereiro{% when '3' %}março{% when '4' %}abril{% when '5' %}maio{% when '6' %}junho{% when '7' %}julho{% when '8' %}agosto{% when '9' %}setembro{% when '10' %}outubro{% when '11' %}novembro{% when '12' %}dezembro{% endcase %}{{ page.date | date: " de %Y" }}</a>
 	</div>
 	<div id="gotoarticle">
 		<a class="scroll" data-speed="1000" href="#article"><span class="genericon genericon-expand"></span></a>
