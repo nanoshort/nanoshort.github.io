@@ -27,7 +27,7 @@ On *panel.js*, you will need to apply the following patch:
 295c295
 <         let icon = this._targetApp.get_faded_icon(2 * PANEL_ICON_SIZE, this._iconBox.text_direction);
 ---
->         let icon = this._targetApp.get_faded_icon(1 * PANEL_ICON_SIZE, this._iconBox.text_direction);
+>         let icon = this._targetApp.get_faded_icon(PANEL_ICON_SIZE, this._iconBox.text_direction);
 350,351c350,351
 <         alloc.min_size = minSize;
 <         alloc.natural_size = naturalSize;
@@ -46,7 +46,7 @@ On *panel.js*, you will need to apply the following patch:
 >             childBox.x2 = allocWidth - Math.floor(iconWidth + 3);
 {% endhighlight %}
 
-You can change these lines manually, or download the diff [here](http://cloud.camporez.com/public.php?service=files&t=f996e5ce81420a91e804ac7dca1c11fa&download&path=/gnome-shell/panel.js.diff&download), and apply it with the following command:
+You can change these lines manually, or download the diff [here](https://gist.github.com/camporez/8566608/download), and apply it with the following command:
 `sudo patch /usr/share/gnome-shell/js/ui/panel.js panel.js.diff`
 
 The changes on the css are small so you just need to open it with your favorite editor and add the line `padding-left: 10px;` to the selector `#appMenu`, like this:
