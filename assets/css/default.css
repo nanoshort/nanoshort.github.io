@@ -129,6 +129,15 @@ img.site-icon-small {
 	margin-right: 10px;
 }
 
+img.site-icon-page {
+	width: 100px;
+	height: 100px;
+	margin-left: -40px;
+	margin-top: -120px;
+	border-radius: 50%;
+	position: absolute;
+}
+
 #gotoarticle {
 	bottom: 50px;
 	width: 50px;
@@ -356,6 +365,7 @@ blockquote p:last-child {
 
 .menu {
 	display: block;
+	cursor: pointer;
 	background-color: #888;
 	width: 24px;
 	top: 20px;
@@ -458,7 +468,7 @@ blockquote p:last-child {
 	font-size: 14px;
 	text-transform: uppercase;
 	right: 20px;
-	bottom: 20px;
+	bottom: 4px;
 	position: absolute;
 }
 

@@ -1,9 +1,6 @@
 ---
 layout: page
-title: Sobre este site
-quote: false
-image: false
-video: false
+title: Sobre o site, o autor, a vida, o universo e tudo mais
 ---
 
 <div class="message">
