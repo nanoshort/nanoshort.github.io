@@ -390,7 +390,40 @@ blockquote p:last-child {
 	z-index: 2;
 }
 
-.social-links a {
+.menu {
+	display: block;
+	background-color: #888;
+	width: 24px;
+	top: 20px;
+	left: 20px;
+	padding-top: 5px;
+	padding-bottom: 2px;
+	padding-left: 8px;
+	border-radius: 3px;
+	position: fixed;
+	z-index: 2;
+}
+
+.menu-content {
+	background-color: #888;
+	width: auto;
+	top: 42px;
+	left: 20px;
+	padding-top: 5px;
+	padding-bottom: 2px;
+	padding-left: 8px;
+	padding-right: 8px;
+	border-radius: 0px 3px 3px 3px;
+	position: fixed;
+	text-align: center;
+	z-index: 2;
+}
+
+.menu-content a {
+	text-transform: uppercase;
+	line-height: 26px;
+}
+.social-links a, .menu a {
 	opacity: 0.75;
 	text-decoration: none;
 	display: inline-block;
@@ -403,8 +436,27 @@ blockquote p:last-child {
 	width: 24px;
 }
 
-.social-links a:hover {
+.menu a span {
+	color: #eee;
+	font-size: 20px;
+	height: 20px;
+	width: 20px;
+}
+
+.social-links a:hover, .menu a:hover {
 	opacity: 1;
+}
+
+.menu + input {
+	display: none;
+}
+
+.menu + input + * {
+	display: none;
+}
+
+.menu+ input:checked + * {
+	display: block;
 }
 
 .pagination a {
