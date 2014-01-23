@@ -1,5 +1,4 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6 {
+html, body, div, span, applet, object, iframe {
 	margin: 0 0 0 0;
 	padding: 0 0 0 0;
 	border: 0 0 0 0;
@@ -363,42 +362,7 @@ blockquote p:last-child {
 	z-index: 2;
 }
 
-.menu {
-	display: block;
-	cursor: pointer;
-	background-color: rgba(136,136,136,0.5);
-	width: 24px;
-	height: 24px;
-	top: 14px;
-	left: 14px;
-	padding-top: 8px;
-	padding-left: 8px;
-	border-radius: 3px;
-	position: fixed;
-	z-index: 2;
-	transition-duration: .5s;
-}
-
-.menu-content {
-	background-color: #888;
-	width: auto;
-	top: 40px;
-	left: 14px;
-	padding-top: 5px;
-	padding-bottom: 2px;
-	padding-left: 8px;
-	padding-right: 8px;
-	border-radius: 0px 3px 3px 3px;
-	position: fixed;
-	text-align: center;
-	z-index: 1;
-}
-
-.menu-content a {
-	text-transform: uppercase;
-	line-height: 26px;
-}
-.social-links a, .menu a {
+.social-links a {
 	opacity: 0.75;
 	text-decoration: none;
 	display: inline-block;
@@ -411,17 +375,61 @@ blockquote p:last-child {
 	width: 24px;
 }
 
-.menu a span {
-	color: #eee;
-	font-size: 20px;
-	height: 20px;
-	width: 20px;
+.social-links a:hover, .menu a:hover {
+	opacity: 1;
+}
+
+.menu {
+	display: block;
+	cursor: pointer;
+	background-color: rgba(119, 119, 119, 0.5);
+	width: 24px;
+	height: 24px;
+	top: 14px;
+	left: 14px;
+	padding-top: 8px;
+	padding-left: 8px;
+	border-radius: 3px;
+	position: fixed;
+	z-index: 2;
+	transition-duration: .5s;
 }
 
 .menu:hover, .menu:active  {
-	background-color: #888;
+	background-color: #777;
 }
-.social-links a:hover, .menu a:hover {
+
+.menu-content {
+	background-color: #777;
+	width: auto;
+	top: 40px;
+	left: 14px;
+	padding-top: 5px;
+	padding-bottom: 2px;
+	padding-left: 12px;
+	padding-right: 12px;
+	border-radius: 0px 3px 3px 3px;
+	position: fixed;
+	text-align: center;
+	z-index: 1;
+}
+
+.menu-content a {
+	text-transform: uppercase;
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 26px;
+}
+
+.menu-content a:hover {
+	color: #cdcdcd;
+}
+
+.menu span {
+	color: #eee;
+	font-size: 16px;
+	height: 20px;
+	width: 20px;
 	opacity: 1;
 }
 
@@ -495,17 +503,6 @@ blockquote p:last-child {
 	position: relative;
 }
 
-.post-description {
-	color: #777;
-	font-size: 20px;
-	font-family: "PT Serif", Georgia, "Times New Roman", serif;
-}
-
-.post-date {
-	font-size: 16px;
-	color: #999;
-}
-
 #post-list h1 {
 	font-weight: bold;
 	font-size: 40px;
@@ -522,4 +519,15 @@ blockquote p:last-child {
 #post-list a:hover {
 	color: #2a7ead;
 	text-decoration: none;
+}
+
+.post-description {
+	color: #777;
+	font-size: 20px;
+	font-family: "PT Serif", Georgia, "Times New Roman", serif;
+}
+
+.post-date {
+	font-size: 16px;
+	color: #999;
 }

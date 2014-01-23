@@ -18,7 +18,6 @@ So, after a lot of unsuccessful tentatives on changing *gnome-shell.css*, I real
 The files you'll have to change are:
 
 1. **/usr/share/gnome-shell/js/ui/panel.js**: to change the size of the icon.
-
 2. **/usr/share/gnome-shell/theme/gnome-shell.css** (or, if you're using a custom theme, its respective *css*): to move the icon slightly to the left.
 
 On *panel.js*, you will need to apply the following patch:
