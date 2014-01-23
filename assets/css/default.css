@@ -218,6 +218,11 @@ img.site-icon-page {
 	z-index: 1;
 }
 
+.image {
+	width: 100%;
+	text-align: left;
+}
+
 table {
 	width: 100%;
 	border: 1px solid #e5e5e5;
