@@ -317,7 +317,7 @@ blockquote, .message {
 caption {
 	width: 100%;
 	padding: .5rem 1rem;
-	margin: 0px 0px 0px -20px;
+	margin: 0px 0px -30px -20px;
 	color: #7a7a7a;
 	font-size: 18px;
 	text-align: left;
