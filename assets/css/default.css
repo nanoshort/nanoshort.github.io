@@ -363,25 +363,30 @@ blockquote p:last-child {
 	z-index: 2;
 }
 
-.menu {
+.menu, .menu-hover {
 	display: block;
 	cursor: pointer;
-	background-color: #888;
+	background-color: rgba(136,136,136,0.5);
 	width: 24px;
+	height: 24px;
 	top: 20px;
 	left: 20px;
-	padding-top: 5px;
-	padding-bottom: 2px;
+	padding-top: 8px;
 	padding-left: 8px;
 	border-radius: 3px;
 	position: fixed;
 	z-index: 2;
+	transition-duration: .5s;
+}
+
+.menu-hover {
+	background-color: #888;
 }
 
 .menu-content {
 	background-color: #888;
 	width: auto;
-	top: 42px;
+	top: 48px;
 	left: 20px;
 	padding-top: 5px;
 	padding-bottom: 2px;
@@ -390,7 +395,7 @@ blockquote p:last-child {
 	border-radius: 0px 3px 3px 3px;
 	position: fixed;
 	text-align: center;
-	z-index: 2;
+	z-index: 1;
 }
 
 .menu-content a {
@@ -417,6 +422,9 @@ blockquote p:last-child {
 	width: 20px;
 }
 
+.menu:hover, .menu:active  {
+	background-color: #888;
+}
 .social-links a:hover, .menu a:hover {
 	opacity: 1;
 }
@@ -429,7 +437,7 @@ blockquote p:last-child {
 	display: none;
 }
 
-.menu+ input:checked + * {
+.menu + input:checked + * {
 	display: block;
 }
 
