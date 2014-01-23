@@ -1,4 +1,2 @@
-<table>
-	<img src="{{ include.url }}" alt="{{ include.description }}" {% if include.width %}width="{{ include.width }}"{% endif %} />
-	<p class="image">{{ include.description }}</p>
-</table>
+<img src="{{ include.url }}" alt="{{ include.description }}" {% if include.width %}width="{{ include.width }}"{% endif %} />
+<caption class="image">{{ include.description }}</caption>

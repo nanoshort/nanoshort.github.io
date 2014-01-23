@@ -314,7 +314,7 @@ blockquote, .message {
 	border-left: 10px solid #F66A81;
 }
 
-p.image {
+caption.image {
 	width: 100%;
 	padding: 10px 18px;
 	margin: 0px 0px 0px -20px;
