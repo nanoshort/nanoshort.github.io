@@ -346,7 +346,12 @@ blockquote p:last-child {
 	color: #888;
 }
 
-.clean, .clean a {
+.clean {
+	color: #eee;
+	background-color: #888;
+}
+
+.clean a {
 	color: #eee;
 }
 
