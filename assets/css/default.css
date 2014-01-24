@@ -64,16 +64,18 @@ footer {
 #post-info h1 {
 	font-weight: bold;
 	font-size: 44px;
-	margin-bottom:8px;
+	line-height: 44px;
+	margin-bottom: 0px;
 }
 
 #post-info h2 {
 	opacity: 0.75;
 	font-style: italic;
 	font-size: 24px;
+	line-height: 24px;
 	text-align: justify;
 	font-weight: lighter;
-	margin-bottom:8px;
+	margin-bottom: 8px;
 }
 
 #post-info h2:before {
@@ -87,7 +89,7 @@ footer {
 #post-info h3 {
 	text-transform: uppercase;
 	font-size: 18px;
-	margin-bottom:8px;
+	margin-bottom: -10px;
 }
 
 a.site-title:hover, .copyright a:hover {
@@ -504,9 +506,9 @@ blockquote p:last-child {
 #post-list h1 {
 	font-weight: bold;
 	font-size: 40px;
-	line-height: 40px;
-	margin-top:8px;
-	margin-bottom:8px;
+	line-height: 44px;
+	margin-top: 8px;
+	margin-bottom: 8px;
 }
 
 #post-list a {
