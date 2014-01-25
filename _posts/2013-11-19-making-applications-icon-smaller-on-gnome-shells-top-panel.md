@@ -10,6 +10,7 @@ I'm a huge fan of GNOME Shell. Using it since the release of version 3.0, is gre
 
 A long time ago I found [this good tutorial](http://www.gregfreeman.org/2011/remove-application-icon-from-gnome-3/) showing how to remove the icon, but it was not what I wanted, I just wanted to make it smaller, like this:
 {% include image.html url="https://github.com/gnome-design-team/gnome-mockups/raw/master/music/music-albums.png"  description="GNOME Music's mockup showing a smaller icon on the top panel, via [GNOME Wiki](https://wiki.gnome.org/Apps/Music)" %}
+
 So, after a lot of unsuccessful tentatives on changing *gnome-shell.css*, I realized that this setup is made with *javascript*, and not just *css*, and I decided to write this small tutorial.
 
 <div class="message"><strong>Disclaimer</strong>: the following procedures were made on version 3.10 of gnome-shell. I don't guarantee that it'll work in previous versions, neither in later versions, nor even in version 3.10, and I'm not responsible for possible damage to your system.</div>

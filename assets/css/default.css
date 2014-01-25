@@ -1,15 +1,16 @@
-html, body, div, span, applet, object, iframe, p, caption {
+html, body, div, span, applet, object, iframe, caption, p {
 	margin: 0 0 0 0;
 	padding: 0 0 0 0;
 	border: 0 0 0 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;
+	color: inherit;
 }
 
 html, body {
 	width: 100%;
 	height: 100%;
+	position: relative;
 }
 
 header {
@@ -36,19 +37,35 @@ footer {
 	margin-top: 50px;
 }
 
-#article h1 {
-	margin-top: 50px;
+p {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	color: #515151;
+}
+
+a {
+	color: #2a7ead;
+	text-decoration: none;
+}
+
+h1 {
+	margin-top: 30px;
 	font-size: 36px;
 }
 
-#article h2 {
-	margin-top: 50px;
+h2 {
+	margin-top: 25px;
 	font-size: 30px;
 }
 
-#article h3 {
-	margin-top: 50px;
+h3 {
+	margin-top: 20px;
 	font-size: 24px;
+}
+
+img {
+	border-radius: 3px;
+	max-width: 100%;
 }
 
 #post-info {
@@ -65,7 +82,7 @@ footer {
 	font-weight: bold;
 	font-size: 44px;
 	line-height: 44px;
-	margin-bottom: 0px;
+	margin: 15px 0px;
 }
 
 #post-info h2 {
@@ -75,7 +92,7 @@ footer {
 	line-height: 24px;
 	text-align: justify;
 	font-weight: lighter;
-	margin-bottom: 8px;
+	margin: 15px 0px;
 }
 
 #post-info h2:before {
@@ -90,10 +107,6 @@ footer {
 	text-transform: uppercase;
 	font-size: 18px;
 	margin-bottom: -10px;
-}
-
-a.site-title:hover, .copyright a:hover {
-	text-decoration: underline;
 }
 
 #home-title {
@@ -140,36 +153,27 @@ img.site-icon-page {
 	position: absolute;
 }
 
-#gotoarticle {
-	bottom: 50px;
-	width: 50px;
+#nav-icon {
+	width: 30px;
 	left: 50%;
-	margin-left: -25px;
+	margin-left: -15px;
 	position: absolute;
 	z-index: 2;
 }
 
-#backtoarticle {
-	top: 25px;
-	width: 50px;
-	left: 50%;
-	margin-left: -25px;
-	position: absolute;
-}
-
-#gotoarticle a, #gotoarticle a span, #backtoarticle a, #backtoarticle a span {
+#nav-icon a, #nav-icon a span {
+	text-decoration: none;
 	font-size: 48px;
-	margin: 0px auto;
+	text-align: center;
 	display: block;
 }
 
 #article {
 	font-family: "PT Serif", Georgia, "Times New Roman", serif;
 	width: 700px;
-	top: 50px;
+	padding: 50px 0px;
 	left: 50%;
 	margin-left: -350px;
-	padding-bottom: 80px;
 	font-weight: 400;
 	letter-spacing: -0.4px;
 	font-size:20px;
@@ -178,22 +182,11 @@ img.site-icon-page {
 	position: relative;
 }
 
-#article p {
-	color: #515151;
-	line-height: 30px;
-	padding-top: 30px;
+#article a:hover, .copyright a:hover {
+	text-decoration: underline;
 }
 
-#article img {
-	border-radius: 3px;
-	max-width: 100%;
-}
-
-#article a {
-	color: #2a7ead;
-	text-decoration: none;
-}
-#article a:hover, #copyright a:hover {
+a.site-title:hover, .copyright a:hover {
 	text-decoration: underline;
 }
 
@@ -263,30 +256,50 @@ abbr[title] {
 	border-bottom: 1px dotted #e5e5e5;
 }
 
+blockquote, pre, .message, .caption {
+	padding: 10px 18px;
+	margin: 0px 0px 30px -20px;
+	margin-top: inherit;
+	color: #7a7a7a;
+}
+
+blockquote {
+	border-left: 10px solid #C7F66A;
+}
+
+blockquote p {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.message {
+	border-left: 10px solid #F66A81;
+}
+
+.caption {
+	border-left: 10px solid #D5D5D5;
+}
+
 code, pre {
 	font-family: Menlo, Monaco, "Courier New", monospace;
+	background-color: #f9f9f9;
 }
 
 code {
 	padding: .25em .5em;
 	font-size: 85%;
 	color: #bf616a;
-	background-color: #f9f9f9;
 	border-radius: 3px;
 }
 
 pre {
 	display: block;
-	padding: 1rem;
 	font-size: .8rem;
 	line-height: 1.4;
 	white-space: pre;
 	white-space: pre-wrap;
 	word-break: break-all;
 	word-wrap: break-word;
-	background-color: #f9f9f9;
-	margin: 20px 0px 0px -20px;
-	color: #7a7a7a;
 	border-left: 10px solid #F6DF6A;
 }
 
@@ -304,46 +317,6 @@ pre code {
 
 .highlight pre {
 	margin-bottom: 0;
-}
-
-blockquote, .message, .caption {
-	padding: 10px 18px;
-	margin: 50px 0px 0px -20px;
-	color: #7a7a7a;
-	border-left: 10px solid #C7F66A;
-}
-
-.message {
-	border-left: 10px solid #F66A81;
-}
-
-.caption {
-	margin: 0px 0px 0px -20px;
-	border-left: 10px solid #D5D5D5;
-}
-
-#article blockquote p {
-	padding-top: 0;
-}
-
-blockquote p:last-child {
-	margin-bottom: 0;
-}
-
-.pagination {
-	position: relative;
-	width: 700px;
-	left: 50%;
-	margin-left: -350px;
-	margin-top: 30px;
-	text-align: center;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 14px;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	font-weight: 300;
-	text-decoration: none;
-	color: #888;
 }
 
 .clean {
@@ -450,6 +423,22 @@ blockquote p:last-child {
 	display: block;
 }
 
+.pagination {
+	position: relative;
+	width: 700px;
+	left: 50%;
+	margin-left: -350px;
+	margin-top: 30px;
+	text-align: center;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 300;
+	text-decoration: none;
+	color: #888;
+}
+
 .pagination a {
 	text-decoration: none;
 	color: #888;
@@ -482,6 +471,7 @@ blockquote p:last-child {
 }
 
 .copyright {
+	color: inherit;
 	font-size: 14px;
 	text-transform: uppercase;
 	right: 20px;
