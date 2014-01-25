@@ -254,7 +254,7 @@ abbr[title] {
 	border-bottom: 1px dotted #e5e5e5;
 }
 
-blockquote, pre, .message, .caption {
+blockquote, pre, .message {
 	padding: 10px 18px;
 	margin: 0px 0px 30px -20px;
 	margin-top: inherit;
@@ -272,10 +272,6 @@ blockquote p {
 
 .message {
 	border-left: 10px solid #F66A81;
-}
-
-.caption {
-	border-left: 10px solid #D5D5D5;
 }
 
 code, pre {
