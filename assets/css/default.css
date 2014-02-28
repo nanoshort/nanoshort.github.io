@@ -487,3 +487,8 @@ pre code {
 	font-size: 12pt;
 	color: #999;
 }
+
+.footnotes {
+	margin-top: 60px;
+	border-top: 1px solid #EEE;
+}
