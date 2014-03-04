@@ -10,6 +10,8 @@ title:		Camporez
 tagline:	'blog'
 description:	'Um blog pessoal.'
 url:		http://camporez.com
+commentsystem:	disqus
+disqus:		camporez
 
 author:
   name:		'Ian Camporez Brunelli'

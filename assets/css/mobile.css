@@ -28,7 +28,7 @@ h2 {
 	margin-left: -50%;
 }
 
-#article {
+#article, #comments {
 	width: 90%;
 	padding: 50px 5%;
 	left: 0px;
