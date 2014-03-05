@@ -27,7 +27,7 @@ article: true
 <div id="article">
 	{{ content }}
 </div>
-{% if page.comments %}
+{% if page.comments != false %}
 <div id="comments">
 	{% include comments.html %}
 </div>

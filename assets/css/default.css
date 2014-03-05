@@ -321,53 +321,75 @@ pre code {
 	width: 24px;
 }
 
-.social-links a:hover, .menu a:hover {
+.social-links a:hover {
 	opacity: 1;
+}
+
+.menu a:hover {
+	-webkit-opacity: 0.75;
+	        opacity: 0.75;
 }
 
 .menu {
 	display: block;
 	cursor: pointer;
-	background-color: rgba(119, 119, 119, 0.5);
-	width: 24px;
-	height: 24px;
-	top: 14px;
-	left: 14px;
-	padding-top: 8px;
-	padding-left: 8px;
-	border-radius: 3px;
-	z-index: 2;
+	background-color: rgba(26, 26, 26, 0.35);
+	width: 30px;
+	height: 30px;
+	top: 12px;
+	left: 12px;
+	padding-top: 5px;
+	padding-left: 5px;
+	z-index: 6;
 	transition-duration: .5s;
 }
 
+.menu-content > .social-links-menu {
+	display: inline-block;
+	margin-left: 10px;
+}
+
 .menu:hover, .menu:active  {
-	background-color: #777;
+	background-color: #1a1a1a;
+}
+
+.menu-content hr {
+	margin: 15px 0;
+	border-top: 1px solid rgb(131, 131, 131);
+	border-bottom: 0px;
 }
 
 .menu-content {
-	background-color: #777;
-	width: auto;
-	top: 40px;
-	left: 14px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background-color: rgba(26, 26, 26, 1);
+	width: 125px;
+	top: 47px;
+	left: 12px;
 	padding-top: 5px;
 	padding-bottom: 2px;
-	padding-left: 12px;
-	padding-right: 12px;
-	border-radius: 0px 3px 3px 3px;
+	padding-left: 20px;
+	padding-right: 20px;
 	text-align: center;
-	z-index: 1;
+	z-index: 5;
 }
 
 .menu-content a {
 	text-transform: uppercase;
-	font-size: 11pt;
-	letter-spacing: 0.7pt;
-	font-weight: bold;
-	line-height: 26px;
+	-moz-osx-font-smoothing: antialiased;
+	 -webkit-font-smoothing: antialiased;
+	         font-smoothing: antialiased;
+	
+	letter-spacing: 1.2pt;
+	font-size: 12px;
+	font-weight: 600;
+	font-style: normal;
+	line-height: 35px;
+	display: block;
+	color: gray;
 }
 
 .menu-content a:hover {
-	color: #cdcdcd;
+	color: #fff;
 }
 
 .menu span {
@@ -376,6 +398,8 @@ pre code {
 	height: 20px;
 	width: 20px;
 	opacity: 1;
+	margin-left: 5px;
+	margin-top: 5px;
 }
 
 .menu + input {
