@@ -349,10 +349,6 @@ pre code {
 	margin-left: 10px;
 }
 
-.menu:hover, .menu:active  {
-	background-color: #1a1a1a;
-}
-
 .menu-content hr {
 	margin: 15px 0;
 	border-top: 1px solid rgb(131, 131, 131);
@@ -362,13 +358,6 @@ pre code {
 .menu-content {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	background-color: rgba(26, 26, 26, 1);
-	width: 125px;
-	top: 47px;
-	left: 12px;
-	padding-top: 5px;
-	padding-bottom: 2px;
-	padding-left: 20px;
-	padding-right: 20px;
 	text-align: center;
 	z-index: 5;
 }

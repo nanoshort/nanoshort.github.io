@@ -48,12 +48,22 @@ h2 {
 }
 
 .menu {
-	background-color: #1a1a1a;
 	position: absolute;
 }
 
 .menu-content {
-	position: absolute;
+	display: block;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	padding: 10px 0 0 0;
+	position: relative;
+}
+
+.menu-title {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	color: #b5b5b5;
 }
 
 .pagination, #post-list {

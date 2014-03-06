@@ -3,6 +3,7 @@
 </label>
 <input id="_1" type="checkbox">
 <div class="menu-content">
+	<p class="menu-title">{{ site.title }}<p>
 	<div class="menu" style="background-color: #1a1a1a; z-index: -1;"></div>
 	{% for item in site.menu %}
 		<a href="{{ item.url }}">{{ item.title }}</a>
