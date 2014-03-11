@@ -168,6 +168,10 @@ img.site-icon-page {
 	position: relative;
 }
 
+#comments {
+	text-align: center;
+}
+
 #article a {
 	border-bottom: 2px solid #fff;
 	-webkit-transition: 0.5s ease;
@@ -185,10 +189,8 @@ a.site-title:hover, .copyright a:hover {
 }
 
 table {
-	border: 0px;
 	border-collapse: collapse;
-	display: block;
-	overflow: auto;
+	border: 0px;
 }
 
 td, th {

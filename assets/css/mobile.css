@@ -99,3 +99,8 @@ h2 {
 	text-align: center;
 	float: left;
 }
+
+table {
+	display: block;
+	overflow: auto;
+}
