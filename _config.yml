@@ -10,14 +10,14 @@ title:		Camporez
 tagline:	'blog'
 description:	'Um blog pessoal.'
 url:		http://camporez.com
-commentsystem:	google
+commentsystem:	none
 disqus:		camporez
 
 author:
   name:		'Ian Camporez Brunelli'
   url:		https://google.com/+IanCamporezBrunelli
 
-paginate:	5
+paginate:	3
 
 # Custom vars
 icon:		/assets/images/icon.png
@@ -26,26 +26,26 @@ cover:		/assets/images/cover.jpg
 social:
   - icon:	twitter
     url:	https://twitter.com/iancamporez
-    desc:	Follow me on twitter
+    desc:	Siga-me no twitter
 
   - icon:	github
     url:	https://github.com/camporez
-    desc:	Fork me on github
+    desc:	Acesse meu github
 
   - icon:	googleplus-alt
     url:	https://google.com/+IanCamporezBrunelli
-    desc:	Add me on google+
+    desc:	Me adicione ao google+
 
   - icon:	feed
     url:	http://camporez.com/atom.xml
-    desc:	Subscribe to my feed
+    desc:	Inscreva-se no meu feed
     
 menu:
-  - title:	Home
+  - title:	Início
     url:	http://camporez.com
     
-  - title:	About
-    url:	http://camporez.com/about
+  - title:	Sobre
+    url:	http://camporez.com/sobre
 
 
 copyright:
