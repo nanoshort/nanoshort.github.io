@@ -15,9 +15,8 @@
 	<script src="https://apis.google.com/js/plusone.js"></script>
 	<div id="g-comments" class="g-comments" data-href="{{ canonical }}" data-width="700" data-first_party_property="BLOGGER" data-view_type="FILTERED_POSTMOD"></div>
 	<script>
-	var width = document.getElementById('comments').offsetWidth * 0.9;
-	var gcomments = document.querySelector('#g-comments'),
-			data = gcomments.dataset;
-	gcomments.dataset.width = width;
+		var width = $('#comments').width();
+		width = Math.round(width);
+		$("#g-comments").attr({ "data-width": width });
 	</script>
 {% endif %}
