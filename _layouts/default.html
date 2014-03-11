@@ -4,9 +4,17 @@
 	<body>
 		{{ content }}
 		<script>
-		    $(document).ready(function(){
-			$(window).stellar();
-		    })
+		var width = $(window).width()
+		if ( width > 899 )
+		$( function(){
+		    $.stellar({
+			responsive: true,
+			verticalScrolling: true,
+			horizontalOffset: 0,
+			verticalOffset: 0,
+			positionProperty: 'transform',
+		    });
+		});
 		</script>
 	</body>
 </html>
