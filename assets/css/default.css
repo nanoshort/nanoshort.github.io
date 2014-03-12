@@ -19,7 +19,7 @@ header {
 header, footer {
 	position: relative;
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: top;
 	background-size: cover;
 	background-attachment: scroll;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
