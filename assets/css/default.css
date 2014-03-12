@@ -143,18 +143,20 @@ img.site-icon-page {
 }
 
 #nav-icon {
-	width: 30px;
+	width: auto;
+	height: auto;
 	left: 50%;
-	margin-left: -15px;
+	margin-left: -25px;
 	position: absolute;
+	text-align: center;
 	z-index: 2;
 }
 
 #nav-icon a, #nav-icon a span {
+	width: 50px;
 	text-decoration: none;
 	font-size: 48px;
-	text-align: center;
-	display: block;
+	display: table;
 }
 
 #middle {
