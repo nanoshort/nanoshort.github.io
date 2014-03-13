@@ -1,5 +1,9 @@
 @import url(default.css);
 
+header, footer {
+	background-attachment: fixed;
+}
+
 #post-info {
 	width: 700px;
 	left: 50%;
