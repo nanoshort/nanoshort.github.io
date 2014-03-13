@@ -10,7 +10,7 @@ title:		Camporez
 tagline:	'blog'
 description:	'Um blog pessoal.'
 url:		http://camporez.com
-commentsystem:	google
+commentsystem:	none
 disqus:		camporez
 
 author:
