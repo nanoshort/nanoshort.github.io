@@ -34,23 +34,23 @@ article: true
 </div>
 {% endif %}
 {% if page.next %}
-	{% capture footer_dark %}{{ page.next.dark }}{% endcapture %}
-	{% capture footer_image %}{{ page.next.image }}{% endcapture %}
-	{% capture footer_message %}Próximo post{% endcapture %}
+	{% capture footer_style %}{% if page.next.dark %}dark{% else %}clean{% endif %}{% endcapture %}
+	{% capture footer_image %}{% if page.next.image %}{{ page.next.image }}{% else %}{{ site.cover }}{% endif %}{% endcapture %}
+	{% capture footer_message %}Read next{% endcapture %}
 	{% capture footer_url %}{{ page.next.url }}{% endcapture %}
 	{% capture footer_title %}{{ page.next.title }}{% endcapture %}
 	{% capture footer_quote %}{{ page.next.quote }}{% endcapture %}
 {% else %}
 	{% for post in site.related_posts limit:1 %}
-		{% capture footer_dark %}{{ post.dark }}{% endcapture %}
-		{% capture footer_image %}{{ post.image }}{% endcapture %}
-		{% capture footer_message %}Em destaque{% endcapture %}
+		{% capture footer_style %}{% if post.dark %}dark{% else %}clean{% endif %}{% endcapture %}
+		{% capture footer_image %}{% if post.image %}{{ post.image }}{% else %}{{ site.cover }}{% endif %}{% endcapture %}
+		{% capture footer_message %}Featured post{% endcapture %}
 		{% capture footer_url %}{{ post.url }}{% endcapture %}
 		{% capture footer_title %}{{ post.title }}{% endcapture %}
 		{% capture footer_quote %}{{ post.quote }}{% endcapture %}
 	{% endfor %}
 {% endif %}
-<footer class="{% if footer_dark == 'true' %}dark{% else %}clean{% endif %}" style="background-image: url({% if footer_image %}{{ footer_image }}{% else %}{{ site.cover }}{% endif %}); height: 75%; min-height: 500px;" data-stellar-background-ratio="0.5" data-stellar-horizontal-offset="50" data-stellar-vertical-offset="50">
+<footer class="{{ footer_style }}" style="background-image: url({% if footer_image %}{{ footer_image }}{% else %}{{ site.cover }}{% endif %}); height: 75%; min-height: 500px;" data-stellar-background-ratio="0.5" data-stellar-horizontal-offset="50" data-stellar-vertical-offset="50">
 	<div id="nav-icon" style="top: 60px;" data-stellar-ratio="0.8">
 		<a class="scroll" data-speed="500" href="#article"><span class="genericon genericon-collapse"></span></a>
 	</div>
