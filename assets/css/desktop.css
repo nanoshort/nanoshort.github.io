@@ -17,11 +17,6 @@ header, footer {
 	line-height: 44px;
 }
 
-#home-title {
-	width: 700px;
-	margin-left: -350px;
-}
-
 #article, #comments {
 	width: 700px;
 	padding: 50px 0px;

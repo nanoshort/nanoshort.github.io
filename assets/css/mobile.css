@@ -26,11 +26,6 @@ h2 {
 	line-height: 30px;
 }
 
-#home-title {
-	width: 100%;
-	margin-left: -50%;
-}
-
 #article, #comments {
 	width: 90%;
 	padding: 50px 5%;
