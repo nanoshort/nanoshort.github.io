@@ -24,15 +24,15 @@ article: true
 	</div>
 </header>
 <div id="middle">
-<div id="article">
-	{{ content }}
+	<div id="article">
+		{{ content }}
+	</div>
+	{% if page.comments != false %}
+	<div id="comments">
+		{% include comments.html %}
+	</div>
+	{% endif %}
 </div>
-{% if page.comments != false %}
-<div id="comments">
-	{% include comments.html %}
-</div>
-</div>
-{% endif %}
 {% if page.next %}
 	{% capture footer_style %}{% if page.next.dark %}dark{% else %}clean{% endif %}{% endcapture %}
 	{% capture footer_image %}{% if page.next.image %}{{ page.next.image }}{% else %}{{ site.cover }}{% endif %}{% endcapture %}
