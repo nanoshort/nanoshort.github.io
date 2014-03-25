@@ -27,11 +27,11 @@ article: true
 	<div id="article">
 		{{ content }}
 	</div>
-	{% if page.comments != false %}
+	{% if site.commentsystem %}{% if page.comments != false %}
 	<div id="comments">
 		{% include comments.html %}
 	</div>
-	{% endif %}
+	{% endif %}{% endif %}
 </div>
 {% if page.next %}
 	{% capture footer_style %}{% if page.next.dark %}dark{% else %}clean{% endif %}{% endcapture %}
