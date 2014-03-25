@@ -59,11 +59,6 @@ h3 {
 	font-size: 24px;
 }
 
-img {
-	border-radius: 3px;
-	max-width: 100%;
-}
-
 #post-info {
 	font-size: 14px;
 	position: absolute;
@@ -212,6 +207,12 @@ img {
 	border-bottom: 2px solid #2a7ead;
 	-webkit-transition: 0.5s ease;
 	transition: 0.5s ease;
+}
+
+
+#article img, #article video {
+	border-radius: 3px;
+	max-width: 100%;
 }
 
 #article-img a, #article-img a:hover {
