@@ -4,6 +4,7 @@ title: "Hello, Cosette"
 quote: "Thinny reaches a new version, with mobile support and some other cool features."
 image:
    url: /media/2014-02-27-hello-cosette/cover.jpg
+   source: http://www.studenthandouts.com/01-Web-Pages/Books-Films/media/les-miserables-movie-2012-film-stills.htm
 video: false
 comments: true
 ---
