@@ -36,7 +36,7 @@ article: true
 {% if page.next %}
 	{% capture footer_style %}{% if page.next.dark %}dark{% else %}clean{% endif %}{% endcapture %}
 	{% capture footer_image %}{% if page.next.image %}{{ page.next.image }}{% else %}{{ site.cover }}{% endif %}{% endcapture %}
-	{% capture footer_message %}Read next{% endcapture %}
+	{% capture footer_message %}Leia a seguir{% endcapture %}
 	{% capture footer_url %}{{ page.next.url }}{% endcapture %}
 	{% capture footer_title %}{{ page.next.title }}{% endcapture %}
 	{% capture footer_quote %}{{ page.next.quote }}{% endcapture %}
@@ -44,7 +44,7 @@ article: true
 	{% for post in site.related_posts limit:1 %}
 		{% capture footer_style %}{% if post.dark %}dark{% else %}clean{% endif %}{% endcapture %}
 		{% capture footer_image %}{% if post.image %}{{ post.image }}{% else %}{{ site.cover }}{% endif %}{% endcapture %}
-		{% capture footer_message %}Featured post{% endcapture %}
+		{% capture footer_message %}Em destaque{% endcapture %}
 		{% capture footer_url %}{{ post.url }}{% endcapture %}
 		{% capture footer_title %}{{ post.title }}{% endcapture %}
 		{% capture footer_quote %}{{ post.quote }}{% endcapture %}
