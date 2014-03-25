@@ -3,7 +3,7 @@ layout: default
 article: true
 ---
 
-<header class="{% if page.dark %}dark{% else %}clean{% endif %}" style="background-image: url({% if page.image %}{{ page.image }}{% else %}{{ site.cover }}{% endif %}); height: 100%;" data-stellar-background-ratio="0.5" data-stellar-horizontal-offset="50">
+<header class="{% if page.dark %}dark{% else %}clean{% endif %}" style="background-image: url({% if page.image.url %}{{ page.image.url }}{% else %}{{ site.cover }}{% endif %}); height: 100%;" data-stellar-background-ratio="0.5" data-stellar-horizontal-offset="50">
 	{% if page.video %}
 		<video id="bg-video" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0" data-stellar-ratio="0.5">
 		{% for format in page.video %}
@@ -19,6 +19,11 @@ article: true
 		{% endif %}
 		<a class="site-title" href="{{ site.url }}"><div class="site-icon-small" style="background-image: url({{ site.icon }});"></div>{{ site.title }}</a>, em {{ page.date | date: "%-d de "}}{% assign m = page.date | date: "%-m" %}{% case m %}{% when '1' %}janeiro{% when '2' %}fevereiro{% when '3' %}março{% when '4' %}abril{% when '5' %}maio{% when '6' %}junho{% when '7' %}julho{% when '8' %}agosto{% when '9' %}setembro{% when '10' %}outubro{% when '11' %}novembro{% when '12' %}dezembro{% endcase %}{{ page.date | date: " de %Y" }}
 	</div>
+	{% if page.image.source %}
+	<div id="img-info" data-stellar-ratio="0.5">
+		<a href="{{ page.image.source }}" target="_blank" title="Fonte {% if page.video %}do vídeo{% else %}da imagem{% endif %}"><span class="genericon genericon-external"></span></a>
+	</div>
+	{% endif %}
 	<div id="nav-icon" style="bottom: 30px;" data-stellar-ratio="0.5">
 		<a class="scroll" data-speed="500" href="#article"><span class="genericon genericon-expand"></span></a>
 	</div>
@@ -35,7 +40,7 @@ article: true
 </div>
 {% if page.next %}
 	{% capture footer_style %}{% if page.next.dark %}dark{% else %}clean{% endif %}{% endcapture %}
-	{% capture footer_image %}{% if page.next.image %}{{ page.next.image }}{% else %}{{ site.cover }}{% endif %}{% endcapture %}
+	{% capture footer_image %}{% if page.next.image.url %}{{ page.next.image.url }}{% else %}{{ site.cover }}{% endif %}{% endcapture %}
 	{% capture footer_message %}Leia a seguir{% endcapture %}
 	{% capture footer_url %}{{ page.next.url }}{% endcapture %}
 	{% capture footer_title %}{{ page.next.title }}{% endcapture %}
@@ -43,7 +48,7 @@ article: true
 {% else %}
 	{% for post in site.related_posts limit:1 %}
 		{% capture footer_style %}{% if post.dark %}dark{% else %}clean{% endif %}{% endcapture %}
-		{% capture footer_image %}{% if post.image %}{{ post.image }}{% else %}{{ site.cover }}{% endif %}{% endcapture %}
+		{% capture footer_image %}{% if post.image.url %}{{ post.image.url }}{% else %}{{ site.cover }}{% endif %}{% endcapture %}
 		{% capture footer_message %}Em destaque{% endcapture %}
 		{% capture footer_url %}{{ post.url }}{% endcapture %}
 		{% capture footer_title %}{{ post.title }}{% endcapture %}

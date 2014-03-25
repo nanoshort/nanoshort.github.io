@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Making application's icon smaller on GNOME Shell's top panel
-image: /media/2013-11-19-making-applications-icon-smaller-on-gnome-shells-top-panel/cover.jpg
+image:
+   url: /media/2013-11-19-making-applications-icon-smaller-on-gnome-shells-top-panel/cover.jpg
 quote: I'm a huge fan of GNOME Shell. Using it since the release of version 3.0, is great to see how things has been polished.
 comments: true
 ---
@@ -9,7 +10,8 @@ comments: true
 I'm a huge fan of GNOME Shell. Using it since the release of version 3.0, is great to see how things has been polished. However, one of the things that always annoyed me is the app icon on the top bar, because it's unnecessarily big, in my opinion.
 
 A long time ago I found [this good tutorial](http://www.gregfreeman.org/2011/remove-application-icon-from-gnome-3/) showing how to remove the icon, but it was not what I wanted, I just wanted to make it smaller, like this:
-{% include image.html url="https://github.com/gnome-design-team/gnome-mockups/raw/master/music/music-albums.png"  description="GNOME Music's mockup showing a smaller icon on the top panel, via [GNOME Wiki](https://wiki.gnome.org/Apps/Music)" %}
+
+{% include image.html url="https://github.com/gnome-design-team/gnome-mockups/raw/master/music/music-albums.png"  description="GNOME Music's mockup showing a smaller icon on the top panel, via GNOME Wiki" %}
 
 So, after a lot of unsuccessful tentatives on changing *gnome-shell.css*, I realized that this setup is made with *javascript*, and not just *css*, and I decided to write this small tutorial.
 

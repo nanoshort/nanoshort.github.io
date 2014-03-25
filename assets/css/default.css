@@ -159,6 +159,26 @@ img {
 	display: table;
 }
 
+#img-info {
+	width: auto;
+	height: auto;
+	right: 15px;
+	bottom: 15px;
+	position: absolute;
+	z-index: 2;
+}
+
+#img-info span, #img-info a {
+	text-decoration: none;
+	font-size: 26px;
+	display: table;
+	opacity: .75;
+}
+
+#img-info a:hover {
+	opacity: 1;
+}
+
 #middle {
 	background-color: #fff;
 	width: 100%;
