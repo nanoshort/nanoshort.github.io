@@ -194,6 +194,10 @@ img {
 	transition: 0.5s ease;
 }
 
+#article-img a, #article-img a:hover {
+	border-bottom: 0px;
+}
+
 a.site-title:hover, .copyright a:hover {
 	text-decoration: underline;
 }
