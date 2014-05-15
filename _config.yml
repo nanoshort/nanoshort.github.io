@@ -10,14 +10,14 @@ title:		Camporez
 tagline:	'blog'
 description:	'Um blog pessoal.'
 url:		http://camporez.com
-commentsystem:	false
+commentsystem:	google
 disqus:		camporez
 
 author:
   name:		'Ian Camporez Brunelli'
   url:		https://google.com/+IanCamporezBrunelli
 
-paginate:	3
+paginate:	5
 
 # Custom vars
 icon:		/assets/images/icon2.png
