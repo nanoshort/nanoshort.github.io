@@ -1,6 +1,6 @@
 # Dependencies
 markdown:	kramdown
-pygments:	true
+highlighter:	pygments
 
 # Permalinks
 permalink:	/blog/:title
@@ -10,7 +10,7 @@ title:		Camporez
 tagline:	'blog'
 description:	'Um blog pessoal.'
 url:		http://camporez.com
-commentsystem:	google
+commentsystem:	false
 disqus:		camporez
 
 author:
@@ -20,7 +20,7 @@ author:
 paginate:	3
 
 # Custom vars
-icon:		/assets/images/icon.png
+icon:		/assets/images/icon2.png
 cover:		/assets/images/cover.jpg
 
 social:
@@ -42,10 +42,10 @@ social:
     
 menu:
   - title:	Início
-    url:	http://camporez.com
+    url:	/
     
   - title:	Sobre
-    url:	http://camporez.com/sobre
+    url:	/sobre
 
 
 copyright:
