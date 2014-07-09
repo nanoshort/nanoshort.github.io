@@ -63,7 +63,7 @@ Each line of this file represents a search term that will generate a XML file in
 
 This file is available online by the URL `YOUR_OPENSHIFT_URL/static/SEARCH_STRING.xml`, and will look like this:
 
-{% hightlight xml %}
+{% highlight xml %}
 <rss version="2.0">
 	<channel>
 		<title>TPB2RSS: Under The Dome S02 !720p [eztv]</title>
