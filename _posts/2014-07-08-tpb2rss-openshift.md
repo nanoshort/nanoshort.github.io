@@ -34,8 +34,7 @@ After edit this file, it's time to place TPB2RSS' files. Browse to your reposito
 {% highlight bash %}
 $ git clone https://github.com/camporez/tpb2rss.git tpb2rss
 $ mv tpb2rss/tpb2rss.py .
-$ mv tpb2rss/openshift/tpb2rss-task.sh .openshift/cron/minutely/
-$ mv tpb2rss/openshift/tpb2rss-cleaner.sh .openshift/cron/daily/
+$ mv tpb2rss/openshift/cron/ .openshift/
 $ mkdir -p wsgi/static; touch wsgi/static/example.xml
 $ rm -rf tpb2rss
 {% endhighlight %}
