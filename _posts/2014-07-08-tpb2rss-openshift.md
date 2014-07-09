@@ -3,7 +3,7 @@ layout: post
 title: Using TPB2RSS with OpenShift
 quote: "A small tutorial on how to generate feed based on thepiratebay.se searches using TPB2RSS (a.k.a. my new python project)"
 image:
-    rl: /media/2014-07-08-tpb2rss-openshift/cover.jpg
+    url: /media/2014-07-08-tpb2rss-openshift/cover.jpg
 video: false
 ---
 
