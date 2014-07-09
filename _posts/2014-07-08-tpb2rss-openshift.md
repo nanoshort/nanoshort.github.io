@@ -89,8 +89,8 @@ This file is available online by the URL `http://YOUR_OPENSHIFT_URL/static/SEARC
 </rss>
 {% endhighlight %}
 
-You can add this URL to your feed client, torrent client (µTorrent, for example, [supports RSS](http://www.utorrent.com/intl/en/help/guides/rss)), IFTTT (to receive a notification when a new item arrives, like in the screenshot below) or any other RSS-tool.
+You can add this URL to your feed client, torrent client (µTorrent, for example, [supports RSS](http://www.utorrent.com/intl/en/help/guides/rss)), [IFTTT](https://ifttt.com) (to receive a notification when a new item arrives, like in the screenshot below) or any other RSS-tool.
 
 {% include image.html url="/media/2014-07-08-tpb2rss-openshift/Captura de tela de 2014-07-09 09:15:56.png" width="100%" description="If a new Halt and Catch Fire episode is uploaded (in WEB-DL and 720p), then send me a note using Pushbullet." %}
 
-This is it! If you've found any problem with this tutorial, please comment below.
+This is it! If you've found any issue with this tutorial, please comment below.
