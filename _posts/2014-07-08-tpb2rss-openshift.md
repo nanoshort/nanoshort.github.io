@@ -12,9 +12,9 @@ Hello, everybody! Nice to see you here...
 
 Well, you may not know, but I was working on a "The Pirate Bay search" to "RSS feed" converter on the last couple of days.
 
-It is a really simple script that, given a search term or a local saved search page, returns (by default printing on the screen) a xml containing the feed (following [the specifications of RSS 2.0](cyber.law.harvard.edu/rss/rss.html)).
+It is a really simple script that, given a search term or a local saved search page, returns (by default printing on the screen) a xml containing the feed (following [the specifications of RSS 2.0](http://cyber.law.harvard.edu/rss/rss.html)).
 
-I won't give more details of the functioning or the functionality of this script in here. You can [take a look at the source code](https://github.com/camporez/tpb2rss/blob/master/tpb2rss.py) and ask any question [in the issues page](https://github.com/camporez/tpb2rss/issues), [twitter](http://twitter.com/iancamporez)/[Google+](http://google.com/+IanCamporezBrunelli) or on the comments' section below.
+I won't give more details of the functioning or the functionality of this script in here. You can [take a look at the source code](https://github.com/camporez/tpb2rss/blob/master/tpb2rss.py) and ask any question [in the issues page](https://github.com/camporez/tpb2rss/issues), [Twitter](http://twitter.com/iancamporez)/[Google+](http://google.com/+IanCamporezBrunelli) or on the comments' section below.
 
 Now, let's get started with the how-to...
 
