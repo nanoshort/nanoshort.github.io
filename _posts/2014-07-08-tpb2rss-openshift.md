@@ -59,7 +59,7 @@ You can create new feeds by editing the file `$OPENSHIFT_DATA_DIR/searches`. SSH
 
 Each line of this file represents a search term that will generate a XML file in `$OPENSHIFT_DATA_DIR/static`.
 
-This file is available online by the URL `YOUR_OPENSHIFT_URL/static/SEARCH_STRING.xml`, and will look like this:
+This file is available online by the URL `http://YOUR_OPENSHIFT_URL/static/SEARCH_STRING.xml`, and will look like this:
 
 {% highlight xml %}
 <rss version="2.0">
