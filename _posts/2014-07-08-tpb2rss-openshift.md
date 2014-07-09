@@ -14,7 +14,7 @@ Well, you may not know, but I was working on a "The Pirate Bay search" to "RSS f
 
 It is a really simple script that, given a search term or a local saved search page, returns (by default printing on the screen) a xml containing the feed (following [the specifications of RSS 2.0](http://cyber.law.harvard.edu/rss/rss.html)).
 
-I won't give more details of the functioning or the functionality of this script in here. You can [take a look at the source code](https://github.com/camporez/tpb2rss/blob/master/tpb2rss.py) and ask any question [in the issues page](https://github.com/camporez/tpb2rss/issues), [Twitter](http://twitter.com/iancamporez)/[Google+](http://google.com/+IanCamporezBrunelli) or on the comments' section below.
+I won't give more details of the functioning or the functionality of this script in here. You can [take a look at the source code](https://github.com/camporez/tpb2rss/blob/master/tpb2rss.py) and ask any question [in the issues page](https://github.com/camporez/tpb2rss/issues), [Twitter](http://twitter.com/iancamporez)/[Google+](http://google.com/+IanCamporezBrunelli) or in the comments' section below.
 
 Now, let's get started with the how-to...
 
@@ -24,8 +24,11 @@ Now, let's get started with the how-to...
 
 Create a [Python 2.7 application on OpenShift](https://openshift.redhat.com/app/console/application_type/cart!python-2.7), then add the Cron cartridge. Clone the application to your computer.
 
-Now, you'll edit the file `setup.py` to include [the Beautiful Soup 4 library](http://www.crummy.com/software/BeautifulSoup/) on your installation. Uncomment the line `install_requires` and add `beautifulsoup4` to it. The line will look like this: `install_requires=['Django>=1.3','beautifulsoup4'],`.
+Now, you'll edit the file `setup.py` to include [the Beautiful Soup 4 library](http://www.crummy.com/software/BeautifulSoup/) on your installation. Uncomment the line `install_requires` and add `beautifulsoup4` to it. The line will look like this:
 
+{% highlight python %}
+      install_requires=['Django>=1.3','beautifulsoup4'],`,
+{% endhighlight %}
 After edit this file, it's time to place TPB2RSS' files. Browse to your repository's root and run the following commands:
 
 {% highlight bash %}
@@ -41,9 +44,7 @@ Commit and push the changes. I won't describe how to use Git/OpenShift, as good 
 
 ## Finishing the installation
 
-Now that you application is up, running and with the required software installed, SSH to it.
-
-Create this file, directory and link:
+Now that your application is up, running and with the required software installed, SSH to it and create this file, directory and link:
 
 {% highlight bash %}
 $ touch "$OPENSHIFT_DATA_DIR/searches"
