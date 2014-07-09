@@ -22,7 +22,7 @@ Now, let's get started with the how-to...
 
 ## Creating the application
 
-Create a Python application on OpenShift, then add the Cron cartridge. Clone the application to your computer.
+Create a [Python 2.7 application on OpenShift](https://openshift.redhat.com/app/console/application_type/cart!python-2.7), then add the Cron cartridge. Clone the application to your computer.
 
 Now, you'll edit the file `setup.py` to include [the Beautiful Soup 4 library](http://www.crummy.com/software/BeautifulSoup/) on your installation. Uncomment the line `install_requires` and add `beautifulsoup4` to it. The line will look like this: `install_requires=['Django>=1.3','beautifulsoup4'],`.
 
@@ -43,15 +43,12 @@ Commit and push the changes. I won't describe how to use Git/OpenShift, as good 
 
 Now that you application is up, running and with the required software installed, SSH to it.
 
-Give permissions and create the required files and links:
+Create this file, directory and link:
 
 {% highlight bash %}
-$ chmod +x "$OPENSHIFT_REPO_DIR/tpb2rss.py"
-$ chmod +x "$OPENSHIFT_REPO_DIR/.openshift/cron/minutely/tpb2rss-task.sh"
-$ chmod +x "$OPENSHIFT_REPO_DIR/.openshift/cron/daily/tpb2rss-task.sh"
-$ ln -s "$OPENSHIFT_REPO_DIR/wsgi/static" "$OPENSHIFT_DATA_DIR/static"
-$ ln -s "$OPENSHIFT_REPO_DIR/.openshift/cron" "$OPENSHIFT_DATA_DIR/cron"
 $ touch "$OPENSHIFT_DATA_DIR/searches"
+$ mkdir "$OPENSHIFT_DATA_DIR/raw"
+$ ln -s "$OPENSHIFT_REPO_DIR/wsgi/static" "$OPENSHIFT_DATA_DIR/static"
 {% endhighlight %}
 
 ## Managing the feeds
@@ -69,7 +66,7 @@ This file is available online by the URL `YOUR_OPENSHIFT_URL/static/SEARCH_STRIN
 	<channel>
 		<title>TPB2RSS: Under The Dome S02 !720p [eztv]</title>
 		<link>http://thepiratebay.org/search/Under%20The%20Dome%20S02%20!720p%20[eztv]/0/3/0</link>
-		<description>Search feed for "Under The Dome S02 !720p [eztv]"</description>
+		<description>The Pirate Bay search feed for "Under The Dome S02 !720p [eztv]"</description>
 		<lastBuildDate>Wed, 09 Jul 2014 01:22:20 GMT</lastBuildDate>
 		<language>en-us</language>
 		<generator>TPB2RSS 1.0</generator>
@@ -79,27 +76,19 @@ This file is available online by the URL `YOUR_OPENSHIFT_URL/static/SEARCH_STRIN
 				<title>Under the Dome S02E02 HDTV x264-LOL [eztv]</title>
 				<link><![CDATA[ magnet:?xt=urn:btih:9759f086c714589f9d75ad04800cf99ce2bd9b19&amp;dn=Under+the+Dome+S02E02+HDTV+x264-LOL+%5Beztv%5D&amp;tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&amp;tr=udp%3A%2F%2Ftracker.publicbt.com%3A80&amp;tr=udp%3A%2F%2Ftracker.istole.it%3A6969&amp;tr=udp%3A%2F%2Fopen.demonii.com%3A1337 ]]></link>
 				<pubDate>Tue, 08 Jul 2014 07:24:00 GMT</pubDate>
-				<description>Link: https://thepiratebay.org/torrent/10507825/Under_the_Dome_S02E02_HDTV_x264-LOL_[eztv]
-Uploader: eztv
-Size: 269.91 MiB
-Seeders: 7546
-Leechers: 1339</description>
+				<description>![CDATA[ Link: https://thepiratebay.org/torrent/10507825/Under_the_Dome_S02E02_HDTV_x264-LOL_[eztv]<br>Uploader: eztv<br>Size: 269.91 MiB<br>Seeders: 7546<br>Leechers: 1339 ]]></description>
 			</item>
 			<item>
 				<title>Under the Dome S02E01 HDTV x264-LOL [eztv]</title>
 				<link><![CDATA[ magnet:?xt=urn:btih:97b265826f18f6183d12257d26d7948092c43bb0&amp;dn=Under+the+Dome+S02E01+HDTV+x264-LOL+%5Beztv%5D&amp;tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&amp;tr=udp%3A%2F%2Ftracker.publicbt.com%3A80&amp;tr=udp%3A%2F%2Ftracker.istole.it%3A6969&amp;tr=udp%3A%2F%2Fopen.demonii.com%3A1337 ]]></link>
 				<pubDate>Tue, 01 Jul 2014 04:34:00 GMT</pubDate>
-				<description>Link: https://thepiratebay.org/torrent/10465762/Under_the_Dome_S02E01_HDTV_x264-LOL_[eztv]
-Uploader: eztv
-Size: 376.38 MiB
-Seeders: 7443
-Leechers: 684</description>
+				<description>![CDATA[ Link: https://thepiratebay.org/torrent/10465762/Under_the_Dome_S02E01_HDTV_x264-LOL_[eztv]<br>Uploader: eztv<br>Size: 376.38 MiB<br>Seeders: 7443<br>Leechers: 684 ]]></description>
 			</item>
 	</channel>
 </rss>
 {% endhighlight %}
 
-You can add this URL to your RSS client, torrent client (some of them support RSS), IFTTT (to receive a notification when a new item arrives, like in the screenshot below).
+You can add this URL to your feed client, torrent client (µTorrent, for example, [supports RSS](http://www.utorrent.com/intl/en/help/guides/rss)), IFTTT (to receive a notification when a new item arrives, like in the screenshot below) or any other RSS-tool.
 
 {% include image.html url="/media/2014-07-08-tpb2rss-openshift/Captura de tela de 2014-07-09 09:15:56.png" width="100%" description="If a new Halt and Catch Fire episode is uploaded (in WEB-DL and 720p), then send me a note using Pushbullet." %}
 
