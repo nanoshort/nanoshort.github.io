@@ -99,6 +99,8 @@ Leechers: 684</description>
 </rss>
 {% endhighlight %}
 
-You can add this URL to your RSS client, torrent client (some of them support RSS), IFTTT (to receive a notification when a new item arrives, for example).
+You can add this URL to your RSS client, torrent client (some of them support RSS), IFTTT (to receive a notification when a new item arrives, like in the screenshot below).
+
+{% include image.html url="/media/2014-07-08-tpb2rss-openshift/Captura de tela de 2014-07-09 09:15:56.png" width="100%" description="If a new Halt and Catch Fire episode is uploaded (in WEB-DL and 720p), then send me a note using Pushbullet." %}
 
 This is it! If you've found any problem with this tutorial, please comment below.
