@@ -29,7 +29,7 @@ Let's get started with the tutorial...
 
 ## Creating the application
 
-Create a [Python 2.7 application on OpenShift](https://openshift.redhat.com/app/console/application_type/cart!python-2.7), then add the Cron cartridge. Clone the application to your computer.
+Create a [Python 2.7 application on OpenShift](https://openshift.redhat.com/app/console/application_type/cart!python-2.7), then, if you're following the **private** method, add the Cron cartridge. Clone the application to your computer.
 
 Now, you'll edit the file `setup.py` to include [the Beautiful Soup 4 library](http://www.crummy.com/software/BeautifulSoup/) on your installation. Uncomment the line `install_requires` and add `beautifulsoup4` to it. The line will look like this:
 
