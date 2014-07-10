@@ -19,7 +19,7 @@ I won't give more details of the functioning or the functionality of this script
 Before I start the tutorial, you've to know that there're inumerous ways to create the feed generator on OpenShift, but in this tutorial I'll approach two of them:
 
 - The first one, runs a cron task to update the RSS. Any RSS is created based on the content of a file placed inside your OpenShift installation. Therefore, you'll have to SSH to your application and edit this file to add/remove new feeds.
-- The second one, is a web-based service. To create a new feed you just need to open yours application main page and insert the link in there, or open a search/user/browse page in thepirate bay and replace the main url to YOUR_OPENSHIFT_URL.
+- The second one is a web-based service. To create a new feed you just need to open your application main page and insert the link in there, or open a search/user/browse page in thepirate bay and replace the main url to YOUR_OPENSHIFT_URL.
 
 From now on, I will call the first method "**private**" and the second "**public**", so a command indicating "public method only" has to be executed only if you're following the second method, and vice-versa.
 
