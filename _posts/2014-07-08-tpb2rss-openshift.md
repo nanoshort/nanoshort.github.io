@@ -12,11 +12,18 @@ Hello, everybody! Nice to see you here...
 
 Well, you may not know, but I was working on a "The Pirate Bay search" to "RSS feed" converter on the last couple of days.
 
-It is a really simple script that, given a search term or a local saved search page, returns (by default printing on the screen) a xml containing the feed (following [the specifications of RSS 2.0](http://cyber.law.harvard.edu/rss/rss.html)).
+It is a really simple script that, given a search term, a TPB link or a local saved TPB page, returns (by default printing on the screen) a xml containing the feed (following [the specifications of RSS 2.0](http://cyber.law.harvard.edu/rss/rss.html)).
 
 I won't give more details of the functioning or the functionality of this script in here. You can [take a look at the source code](https://github.com/camporez/tpb2rss/blob/master/tpb2rss.py) and ask any question [in the issues page](https://github.com/camporez/tpb2rss/issues), [Twitter](http://twitter.com/iancamporez)/[Google+](http://google.com/+IanCamporezBrunelli) or in the comments' section below.
 
-Now, let's get started with the how-to...
+Before I start the tutorial, you've to know that there're inumerous ways to create the feed generator on OpenShift, but in this tutorial I'll approach two of them:
+
+- The first one, runs a cron task to update the RSS. Any RSS is created based on the content of a file placed inside your OpenShift installation. Therefore, you'll have to SSH to your application and edit this file to add/remove new feeds.
+- The second one, is a web-based service. To create a new feed you just need to open yours application main page and insert the link in there, or open a search/user/browse page in thepirate bay and replace the main url to YOUR_OPENSHIFT_URL.
+
+From now on, I will call the first method "**private**" and the second "**public**", so a command indicating "public method only" has to be executed only if you're following the second method, and vice-versa.
+
+Let's get started with the tutorial...
 
 # Installing on OpenShift
 
@@ -29,13 +36,15 @@ Now, you'll edit the file `setup.py` to include [the Beautiful Soup 4 library](h
 {% highlight python %}
       install_requires=['Django>=1.3','beautifulsoup4'],
 {% endhighlight %}
+
 After edit this file, it's time to place TPB2RSS' files. Browse to your repository's root and run the following commands:
 
 {% highlight bash %}
 $ git clone https://github.com/camporez/tpb2rss.git tpb2rss
 $ mv tpb2rss/tpb2rss.py .
-$ mv tpb2rss/openshift/cron/ .openshift/
-$ mkdir -p wsgi/static; touch wsgi/static/example.xml
+$ mv tpb2rss/openshift/wsgi.py . # Private method only
+$ mv tpb2rss/openshift/cron/ .openshift/ # Public method only
+$ mkdir -p wsgi/static; touch wsgi/static/example.xml # Public method only
 $ rm -rf tpb2rss
 {% endhighlight %}
 
@@ -43,7 +52,7 @@ Commit and push the changes. I won't describe how to use Git/OpenShift, as good 
 
 ## Finishing the installation
 
-Now that your application is up, running and with the required software installed, SSH to it and create this file, directory and link:
+If you're following the "**private**" method, SSH to your application and create this file, directory and link:
 
 {% highlight bash %}
 $ touch "$OPENSHIFT_DATA_DIR/searches"
@@ -55,7 +64,7 @@ $ ln -s "$OPENSHIFT_REPO_DIR/wsgi/static" "$OPENSHIFT_DATA_DIR/static"
 
 TPB2RSS is probably running, if you followed all the steps correctly.
 
-You can create new feeds by editing the file `$OPENSHIFT_DATA_DIR/searches`. SSH to your application and edit this file with your favorite text editor.
+If you're following the "**private**" method, you can create new feeds by editing the file `$OPENSHIFT_DATA_DIR/searches`. SSH to your application and edit this file with your favorite text editor.
 
 Each line of this file represents a search term that will generate a XML file in `$OPENSHIFT_DATA_DIR/static`.
 
@@ -87,6 +96,8 @@ This file is available online by the URL `http://YOUR_OPENSHIFT_URL/static/SEARC
 	</channel>
 </rss>
 {% endhighlight %}
+
+If you're following the "**public**" method, just browse to `http://YOUR_OPENSHIFT_URL` to generate a new feed URL. The content of this URL will look like the above XML.
 
 You can add this URL to your feed client, torrent client (µTorrent, for example, [supports RSS](http://www.utorrent.com/intl/en/help/guides/rss)), [IFTTT](https://ifttt.com) (to receive a notification when a new item arrives, like in the screenshot below) or any other RSS-tool.
 
