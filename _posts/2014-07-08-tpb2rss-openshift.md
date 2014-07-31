@@ -34,7 +34,7 @@ Create a [Python 2.7 application on OpenShift](https://openshift.redhat.com/app/
 Now, you'll edit the file `setup.py` to include [the Beautiful Soup 4 library](http://www.crummy.com/software/BeautifulSoup/) on your installation. Uncomment the line `install_requires` and add `beautifulsoup4` to it. The line will look like this:
 
 {% highlight python %}
-      install_requires=['Django>=1.3','beautifulsoup4'],
+      install_requires=['beautifulsoup4'],
 {% endhighlight %}
 
 After edit this file, it's time to place TPB2RSS' files. Browse to your repository's root and run the following commands:
@@ -43,6 +43,7 @@ After edit this file, it's time to place TPB2RSS' files. Browse to your reposito
 $ git clone https://github.com/camporez/tpb2rss.git tpb2rss
 $ mv tpb2rss/tpb2rss.py .
 $ mv tpb2rss/openshift/wsgi.py . # Public method only
+$ mv tpb2rss/openshift/page.py . # Public method only
 $ mv tpb2rss/openshift/cron/ .openshift/ # Private method only
 $ mkdir -p wsgi/static; touch wsgi/static/example.xml # Private method only
 $ rm -rf tpb2rss
