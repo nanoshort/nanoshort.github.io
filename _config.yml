@@ -9,7 +9,7 @@ permalink:	/blog/:title
 title:		Camporez
 tagline:	'blog'
 description:	'Um blog pessoal.'
-url:		http://camporez.com
+url:		http://camporez.github.io
 commentsystem:	google
 disqus:		camporez
 
@@ -37,7 +37,7 @@ social:
     desc:	Me adicione ao google+
 
   - icon:	feed
-    url:	http://camporez.com/atom.xml
+    url:	http://camporez.github.io/atom.xml
     desc:	Inscreva-se no meu feed
     
 menu:
@@ -50,6 +50,6 @@ menu:
 
 copyright:
   author:	Camporez
-  url:		http://camporez.com
+  url:		http://camporez.github.io
   type_title:	Alguns direitos reservados
   type_url:	http://creativecommons.org/licenses/by-nc/2.5/br
