@@ -6,9 +6,9 @@ highlighter:	pygments
 permalink:	/blog/:title
 
 # Setup
-title:		Camporez
+title:		blogsito para probar
 tagline:	'blog'
-description:	'Um blog pessoal.'
+description:	'hola'
 url:		http://camporez.github.io
 commentsystem:	google
 disqus:		camporez
