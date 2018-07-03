@@ -6,7 +6,7 @@ highlighter:	pygments
 permalink:	/blog/:title
 
 # Setup
-title:		nano blog
+title:		nano
 tagline:	'blog'
 description:	'This is the official blog of nano.do'
 url:		http://ortizjeison.github.io
@@ -58,5 +58,5 @@ menu:
 copyright:
   author:	nano
   url:		http://nano.do
-  type_title:
+#  type_title:
   type_url:	http://creativecommons.org/licenses/by-nc/2.5/br
