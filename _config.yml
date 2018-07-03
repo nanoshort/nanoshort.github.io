@@ -6,16 +6,16 @@ highlighter:	pygments
 permalink:	/blog/:title
 
 # Setup
-title:		blogsito para probar
+title:		nano blog
 tagline:	'blog'
-description:	'hola'
+description:	'This is the official blog of nano.do'
 url:		http://ortizjeison.github.io
 commentsystem:	google
 disqus:		camporez
 
 author:
-  name:		'Ian Camporez Brunelli'
-  url:		https://google.com/+IanCamporezBrunelli
+  name:		'nano team'
+  url:		http://nano.do/about
 
 paginate:	5
 
@@ -25,31 +25,38 @@ cover:		/assets/images/cover2.png
 
 social:
   - icon:	twitter
-    url:	https://twitter.com/iancamporez
-    desc:	Siga-me no twitter
+    url:	https://twitter.com/nanodo_en
+    desc:	¡Follow us on twitter!
 
-  - icon:	github
-    url:	https://github.com/camporez
-    desc:	Acesse meu github
+  - icon: facebook
+    url:  https://twitter.com/nanodo_en
+    desc: ¡Follow us on facebook!
 
-  - icon:	googleplus-alt
-    url:	https://google.com/+IanCamporezBrunelli
-    desc:	Me adicione ao google+
+#  - icon:	github
+#    url:	https://github.com/camporez
+#    desc:	Acesse meu github
 
-  - icon:	feed
-    url:	http://camporez.github.io/atom.xml
-    desc:	Inscreva-se no meu feed
+#   - icon:	googleplus-alt
+#    url:	https://google.com/+IanCamporezBrunelli
+#    desc:	Me adicione ao google+
+
+#  - icon:	feed
+#    url:	http://camporez.github.io/atom.xml
+#    desc:	Inscreva-se no meu feed
     
 menu:
   - title:	Início
     url:	/
     
+  - title:  Legal
+    url:  /legal
+
   - title:	Legal
     url:	/legal
 
 
 copyright:
-  author:	Camporez
-  url:		http://camporez.github.io
-  type_title:	Alguns direitos reservados
+  author:	Nano team
+  url:		http://nano.do
+  type_title:	nano 2018
   type_url:	http://creativecommons.org/licenses/by-nc/2.5/br
