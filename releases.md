@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Legal
+title: Releases
 ---
 <div class="message">
-  What's new on nano?
+  Discover what's new on nano.
 </div>
