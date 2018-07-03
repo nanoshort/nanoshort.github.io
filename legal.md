@@ -4,12 +4,11 @@ title: Legal
 ---
 
 <div class="message">
-  Esta página estará pronta em breve! Enquanto isso, fique com este belo texto em latim a seguir.
+  Toda la información contenida en este documento está sujeta a cambios sin previo aviso.
 </div>
 
-nano - legal
 Términos de servicio.
-Nota: Toda la información contenida en este documento está sujeta a cambios sin previo aviso.
+
 
 Términos de servicio.
 Disponibilidad de los enlaces nano.
