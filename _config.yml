@@ -10,8 +10,8 @@ title:		nano
 tagline:	'blog'
 description:	'This is the official blog of nano.do'
 url:		http://ortizjeison.github.io
-commentsystem:	google
-disqus:		camporez
+commentsystem:	disqus
+disqus:		nanodoblog
 
 author:
   name:		'nano team'
