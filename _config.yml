@@ -11,7 +11,7 @@ tagline:	'blog'
 description:	'This is the official blog of nano.do'
 url:		http://ortizjeison.github.io
 commentsystem:	disqus
-disqus:		nanodoblog
+disqus:		nanodo-blog
 
 author:
   name:		'nano team'
