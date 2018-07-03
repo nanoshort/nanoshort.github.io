@@ -45,14 +45,14 @@ social:
 #    desc:	Inscreva-se no meu feed
     
 menu:
-  - title:	Início
+  - title:	Home
     url:	/
     
   - title:  Legal
     url:  /legal
 
-  - title:	Legal
-    url:	/legal
+  - title:	Releases
+    url:	/releases
 
 
 copyright:
