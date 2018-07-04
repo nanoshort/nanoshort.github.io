@@ -15,7 +15,7 @@ disqus:		nanodo-blog
 
 author:
   name:		'nano team'
-  url:		http://nano.do/about
+  url:		https://nano.do/about
 
 paginate:	5
 
@@ -26,46 +26,23 @@ cover:		/assets/images/cover2.png
 social:
   - icon:	twitter
     url:	https://twitter.com/nanodo_en
-    desc:	¡Follow us on twitter!
+    desc:	Follow us on twitter!
 
   - icon: facebook
     url:  https://twitter.com/nanodo_en
-    desc: ¡Follow us on facebook!
+    desc: Follow us on facebook!
 
   - icon:	instagram
-    url:	https://github.com/camporez
-    desc:	Acesse meu github
-
-
-  - icon: external
-    url:  https://github.com/camporez
-    desc: Acesse meu github
+    url:	https://www.instagram.com/nanoshorten/
+    desc:	Follow us on Instagram!
 
   - icon: link
-    url:  https://github.com/camporez
-    desc: Acesse meu github
-
-  - icon: code
-    url:  https://github.com/camporez
-    desc: Acesse meu github
-
-  - icon: tablet
-    url:  https://github.com/camporez
-    desc: Acesse meu github
+    url:  https://nano.do/
+    desc: Short your links.
 
   - icon: chat
-    url:  https://github.com/camporez
-    desc: Acesse meu github
-    
-
-
-#   - icon:	googleplus-alt
-#    url:	https://google.com/+IanCamporezBrunelli
-#    desc:	Me adicione ao google+
-
-#  - icon:	feed
-#    url:	http://camporez.github.io/atom.xml
-#    desc:	Inscreva-se no meu feed
+    url:  https://t.me/nanoshorten
+    desc: Chat with us!
     
 menu:
   - title:	Home
