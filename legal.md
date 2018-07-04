@@ -44,11 +44,11 @@ El módulo de usuarios se encuentra actualmente en desarrollo, por lo tanto no t
 
 
 
-Glosario:
-<strong>Enlace original:</strong> Es el enlace que el usuario desea acortar, o dicho de otra forma, es el enlace al que se redirige el usuario final.
-
-Enlace nano: es el conjunto de enlace acortado y detalles del mismo (tales como estadísticas y contraseñas).
-
-URL amigable: Consiste en una dirección url compuesta por el dominio de nano y un código de 3 palabras separadas por un carácter.
-
-Miembro nano: Usuario pre-registrado en nuestro formulario de pre-registro.
+Glosario:<br>
+<b>Enlace original:</b> Es el enlace que el usuario desea acortar, o dicho de otra forma, es el enlace al que se redirige el usuario final.
+<br>
+<b>Enlace nano:<b> es el conjunto de enlace acortado y detalles del mismo (tales como estadísticas y contraseñas).
+<br>
+<b>URL amigable:<b> Consiste en una dirección url compuesta por el dominio de nano y un código de 3 palabras separadas por un carácter.
+<br>
+<b>Miembro nano:<b> Usuario pre-registrado en nuestro formulario de pre-registro.
