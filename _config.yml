@@ -36,6 +36,32 @@ social:
     url:	https://github.com/camporez
     desc:	Acesse meu github
 
+
+  - icon: external
+    url:  https://github.com/camporez
+    desc: Acesse meu github
+
+  - icon: expand
+    url:  https://github.com/camporez
+    desc: Acesse meu github
+
+  - icon: code
+    url:  https://github.com/camporez
+    desc: Acesse meu github
+
+  - icon: fullscreen
+    url:  https://github.com/camporez
+    desc: Acesse meu github
+
+  - icon: info
+    url:  https://github.com/camporez
+    desc: Acesse meu github
+
+  - icon: ablet
+    url:  https://github.com/camporez
+    desc: Acesse meu github
+
+
 #   - icon:	googleplus-alt
 #    url:	https://google.com/+IanCamporezBrunelli
 #    desc:	Me adicione ao google+
@@ -50,7 +76,7 @@ menu:
 
   - title:  App
     url:  https://nano.do/
-        
+
   - title:  Legal
     url:  /legal
 
