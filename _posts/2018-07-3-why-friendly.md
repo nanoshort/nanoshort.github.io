@@ -1,6 +1,6 @@
 ---
 layout: post
-title: what makes a friendly link remarkable?
+title: What makes a friendly link remarkable?
 quote: "Our main current feature"
 image:
     url: /media/2014-07-08-tpb2rss-openshift/cover.jpg
