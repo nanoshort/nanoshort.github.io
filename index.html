@@ -24,7 +24,7 @@ title: Home
 	{% if paginator.next_page %}
 		<a class="newer-posts" href="/page{{paginator.next_page}}">&larr; Posts anteriores</a>
 	{% endif %}
-	<span class="page-number">Página {{ paginator.page }} de {{ paginator.total_pages }}</span>
+	<span class="page-number">Pg {{ paginator.page }} / {{ paginator.total_pages }}</span>
 	{% if paginator.previous_page %}
 		{% if paginator.page == 2 %}
 			<a class="older-posts" href="/">Posts recentes &rarr;</a>
