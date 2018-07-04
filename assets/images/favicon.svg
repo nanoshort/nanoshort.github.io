@@ -154,16 +154,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="4"
-     inkscape:cx="51.18912"
-     inkscape:cy="54.682498"
+     inkscape:zoom="2"
+     inkscape:cx="-32.027045"
+     inkscape:cy="50.397265"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1366"
-     inkscape:window-height="717"
-     inkscape:window-x="0"
-     inkscape:window-y="25"
+     inkscape:window-height="743"
+     inkscape:window-x="1366"
+     inkscape:window-y="0"
      inkscape:window-maximized="1"
      units="px" />
   <metadata
@@ -197,27 +197,35 @@
        inkscape:export-ydpi="96"
        inkscape:export-filename="C:\Users\x\Documents\l6.png" />
     <g
-       id="g846"
-       transform="matrix(0.69130433,0,0,0.69130433,17.750003,322.76696)">
-      <path
-         inkscape:export-ydpi="13.356523"
-         inkscape:export-xdpi="13.356523"
-         d="M 113.81138,1121.331 H 80.290273 v -57.3152 q 0,-11.0415 -5.82531,-16.8633 -5.723116,-5.5207 -16.964961,-5.5207 -11.241835,0 -16.964951,5.5207 -5.825321,5.8218 -5.825321,16.8633 v 57.3152 H 1.188615 v -57.3152 q 0,-24.6927 15.738581,-40.0503 15.431977,-15.2572 40.572806,-15.2572 25.140838,0 40.572816,15.2572 15.738562,15.3576 15.738562,40.0503 z"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:medium;line-height:125%;font-family:'Magettas DEMO';-inkscape-font-specification:'Magettas DEMO Bold';letter-spacing:0px;word-spacing:0px;fill:#1496ed;fill-opacity:1;stroke:#000000;stroke-width:2.37722993;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         id="path1024-1-7"
-         inkscape:connector-curvature="0" />
-      <path
-         sodipodi:nodetypes="ccccc"
-         inkscape:connector-curvature="0"
-         id="rect905-9-9-1-8-8-4"
-         d="m 2.379236,1096.9538 c 11.937316,4.687 22.104471,2.9067 31.155145,0 v 23.2015 H 2.379236 Z"
-         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:19.51838112;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-      <path
-         sodipodi:nodetypes="ccccc"
-         inkscape:connector-curvature="0"
-         id="rect905-9-9-1-8-8-4-4"
-         d="m 81.744398,1096.9333 c 11.937316,4.687 22.104472,2.9066 31.155142,0 v 23.2015 H 81.744398 Z"
-         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:19.51838112;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+       transform="translate(0,-5.3320312e-5)"
+       id="layer1-2"
+       inkscape:label="Capa 1"
+       inkscape:export-xdpi="417.3913"
+       inkscape:export-ydpi="417.3913">
+      <circle
+         inkscape:export-ydpi="13"
+         inkscape:export-xdpi="13"
+         r="57.5"
+         cy="1065.0197"
+         cx="57.5"
+         id="path841-3"
+         style="fill:#1496ed;fill-opacity:1;stroke-width:0.39001206" />
+      <g
+         inkscape:export-filename="C:\Users\x\Documents\l6.png"
+         inkscape:export-ydpi="96"
+         inkscape:export-xdpi="96"
+         id="g995-2" />
+      <g
+         transform="matrix(0.54923702,0,0,0.54923702,25.918873,474.07144)"
+         id="g846-6">
+        <path
+           inkscape:connector-curvature="0"
+           id="path1024-1-7-8"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:medium;line-height:125%;font-family:'Magettas DEMO';-inkscape-font-specification:'Magettas DEMO Bold';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.37722993;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="M 113.81138,1121.331 H 80.290273 v -57.3152 q 0,-11.0415 -5.82531,-16.8633 -5.723116,-5.5207 -16.964961,-5.5207 -11.241835,0 -16.964951,5.5207 -5.825321,5.8218 -5.825321,16.8633 v 57.3152 H 1.188615 v -57.3152 q 0,-24.6927 15.738581,-40.0503 15.431977,-15.2572 40.572806,-15.2572 25.140838,0 40.572816,15.2572 15.738562,15.3576 15.738562,40.0503 z"
+           inkscape:export-xdpi="13.356523"
+           inkscape:export-ydpi="13.356523" />
+      </g>
     </g>
   </g>
 </svg>
