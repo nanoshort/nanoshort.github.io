@@ -15,6 +15,9 @@ Escenarios:
 compartiendo enlaces a un colega
 llamar la atención en redes sociales
 impactar en campañas publicitarias
+integración con google drive
+compartir google docs (encuestas, hojas de cálculo...)
+
 
 cada característica:
-amigable con las personas, fácil de memorizar...
+amigable con las personas, fácil de memorizar, pegajoso...
