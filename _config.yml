@@ -32,9 +32,9 @@ social:
     url:  https://twitter.com/nanodo_en
     desc: ¡Follow us on facebook!
 
-#  - icon:	github
-#    url:	https://github.com/camporez
-#    desc:	Acesse meu github
+  - icon:	instagram
+    url:	https://github.com/camporez
+    desc:	Acesse meu github
 
 #   - icon:	googleplus-alt
 #    url:	https://google.com/+IanCamporezBrunelli
@@ -45,12 +45,12 @@ social:
 #    desc:	Inscreva-se no meu feed
     
 menu:
-  - title:  App
-    url:  https://nano.do/
-
   - title:	Home
     url:	/
-    
+
+  - title:  App
+    url:  https://nano.do/
+        
   - title:  Legal
     url:  /legal
 
