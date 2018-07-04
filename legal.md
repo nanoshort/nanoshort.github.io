@@ -7,10 +7,8 @@ title: Legal
   Toda la información contenida en este documento está sujeta a cambios sin previo aviso.
 </div>
 
-Términos de servicio.
-
-
 <b>Términos de servicio.</b>
+
 
 <b>Disponibilidad de los enlaces nano.</b>
 

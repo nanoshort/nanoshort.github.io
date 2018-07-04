@@ -54,6 +54,9 @@ menu:
   - title:	Releases
     url:	/releases
 
+  - title:  FAQ
+    url:  /faq
+
 
 copyright:
   author:	nano
