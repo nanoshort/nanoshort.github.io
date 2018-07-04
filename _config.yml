@@ -41,7 +41,7 @@ social:
     url:  https://github.com/camporez
     desc: Acesse meu github
 
-  - icon: expand
+  - icon: link
     url:  https://github.com/camporez
     desc: Acesse meu github
 
@@ -49,15 +49,11 @@ social:
     url:  https://github.com/camporez
     desc: Acesse meu github
 
-  - icon: fullscreen
+  - icon: tablet
     url:  https://github.com/camporez
     desc: Acesse meu github
 
-  - icon: info
-    url:  https://github.com/camporez
-    desc: Acesse meu github
-
-  - icon: ablet
+  - icon: chat
     url:  https://github.com/camporez
     desc: Acesse meu github
 
