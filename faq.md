@@ -3,7 +3,7 @@ layout: page
 title: FAQ
 ---
 
-## I think it's funny to use words in my short link but why do I can't set my own words?
+> ## I think it's funny to use words in my short link but why do I can't set my own words?
 **—Jorge Melo**
 
 **nano team:**
