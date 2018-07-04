@@ -45,7 +45,7 @@ El módulo de usuarios se encuentra actualmente en desarrollo, por lo tanto no t
 
 
 Glosario:
-Enlace original: Es el enlace que el usuario desea acortar, o dicho de otra forma, es el enlace al que se redirige el usuario final.
+<strong>Enlace original:</strong> Es el enlace que el usuario desea acortar, o dicho de otra forma, es el enlace al que se redirige el usuario final.
 
 Enlace nano: es el conjunto de enlace acortado y detalles del mismo (tales como estadísticas y contraseñas).
 
