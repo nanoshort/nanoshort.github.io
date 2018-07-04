@@ -57,9 +57,6 @@ menu:
   - title:  FAQ
     url:  /faq
 
-  - title:  Link shortener
-    url:  https://nano.do/
-
 copyright:
   author:	nano
   url:		http://nano.do
