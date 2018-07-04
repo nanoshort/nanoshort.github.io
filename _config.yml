@@ -25,7 +25,7 @@ cover:		/assets/images/cover2.png
 
 social:
   - icon:	twitter
-    url:	https://twitter.com/nanodo_en
+    url:	https://twitter.com/nanoshorten
     desc:	Follow us on twitter!
 
   - icon: facebook
@@ -36,20 +36,17 @@ social:
     url:	https://www.instagram.com/nanoshorten/
     desc:	Follow us on Instagram!
 
-  - icon: link
-    url:  https://nano.do/
-    desc: Short your links.
-
   - icon: chat
     url:  https://t.me/nanoshorten
     desc: Chat with us!
+
+  - icon: link
+    url:  https://nano.do/
+    desc: Short your links.
     
 menu:
   - title:	Home
     url:	/
-
-  - title:  App
-    url:  https://nano.do/
 
   - title:  Legal
     url:  /legal
@@ -60,6 +57,8 @@ menu:
   - title:  FAQ
     url:  /faq
 
+  - title:  Link shortener
+    url:  https://nano.do/
 
 copyright:
   author:	nano
