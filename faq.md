@@ -3,7 +3,7 @@ layout: page
 title: FAQ
 ---
 
-<b>Why do I can't set my own words?</b>
+<b>It's a funny way to use words in my short link but why do I can't set my own words?</b>
 
 <i>Jorge Melo.</i>
 
