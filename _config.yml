@@ -9,7 +9,7 @@ permalink:	/blog/:title
 title:		nano
 tagline:	'blog'
 description:	'This is the official blog of nano.do'
-url:		https://ortizjeison.github.io
+url:		nanoshort.github.io
 commentsystem:	disqus
 disqus:		nanodo-blog
 
