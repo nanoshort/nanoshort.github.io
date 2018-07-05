@@ -13,11 +13,12 @@ Bueno son mejores porque blablabla
 Escenarios:
 
 compartiendo enlaces a un colega
-llamar la atención en redes sociales
+llamar la atención en redes sociales (Scroll down)
 impactar en campañas publicitarias
 integración con google drive
 compartir google docs (encuestas, hojas de cálculo...)
 
+Los QR no sirven
 
 cada característica:
 amigable con las personas, fácil de memorizar, pegajoso...
