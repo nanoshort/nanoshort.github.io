@@ -1,3 +1,3 @@
-## camporez.github.io
+## [Official blog of nano.do](https://nano.do).
 
-Powered by [Thinny](http://github.com/camporez/Thinny).
+Read our [nano blog](https://blog.nano.do).
