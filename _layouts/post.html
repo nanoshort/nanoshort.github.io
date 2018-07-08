@@ -20,7 +20,8 @@ article: true
 		<a class="site-title" href="{{ site.url }}"><div class="site-icon-small" style="background-image: url(
 		{% if page.author == 'Jeison Ortiz' %}
 			{{ site.author_jeison.pic }}
-		{% elseif page.author == 'Ricardo Restrepo' %}
+		{% else %}
+		{% if page.author == 'Ricardo Restrepo' %}
 			{{ site.author_ricardo.pic }}
 		{% else %}
 			{{site.icon}}
