@@ -13,9 +13,20 @@ url:		https://nanoshort.github.io
 commentsystem:	disqus
 disqus:		nanodo-blog
 
-author:
+author_nano:
   name:		'nano team'
   url:		https://nano.do/about
+
+author_jeison:
+  name:   'Jeison Ortiz'
+  pic:    /assets/images/jeison.png
+  url:    https://nano.do/about
+
+author_ricardo:
+  name:   'Ricardo Restrepo'
+  pic:    /assets/images/ricardo.png
+  url:    https://nano.do/about
+
 
 paginate:	5
 

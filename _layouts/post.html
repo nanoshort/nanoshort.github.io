@@ -17,7 +17,18 @@ article: true
 		{% if page.quote %}
 			<h2>{{ page.quote }}</h2>
 		{% endif %}
-		<a class="site-title" href="{{ site.url }}"><div class="site-icon-small" style="background-image: url({{ site.icon }});"></div>
+		<a class="site-title" href="{{ site.url }}"><div class="site-icon-small" style="background-image: url(
+		{% if page.author == 'Jeison Ortiz' %}
+			{{ site.author_jeison.pic }}
+		{% elseif page.author == 'Ricardo Restrepo' %}
+			{{ site.author_ricardo.pic }}
+		{% else %}
+			{{site.icon}}
+		{% endif %}"
+
+		></div>
+
+
 			{{ page.author }}
 		</a>
 
