@@ -21,10 +21,11 @@ article: true
 		{% if page.author == 'Jeison Ortiz' %}
 			{{ site.author_jeison.pic }}
 		{% else %}
-		{% if page.author == 'Ricardo Restrepo' %}
-			{{ site.author_ricardo.pic }}
-		{% else %}
-			{{site.icon}}
+			{% if page.author == 'Ricardo Restrepo' %}
+				{{ site.author_ricardo.pic }}
+			{% else %}
+				{{site.icon}}
+			{% endif %}	
 		{% endif %}"
 
 		></div>
