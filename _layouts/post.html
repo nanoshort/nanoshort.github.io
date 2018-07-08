@@ -18,13 +18,7 @@ article: true
 			<h2>{{ page.quote }}</h2>
 		{% endif %}
 		<a class="site-title" href="{{ site.url }}"><div class="site-icon-small" style="background-image: url({{ site.icon }});"></div>
-		{% if page.author != 1 %}
-			{{ Jeison Ortiz }}
-		{% elseif page.author==2) %}
-			{{ Ricardo Restrepo }}
-		{% else page.author==2) %}
-			{{ Nano Team }}
-		{% endif %}
+			{{ page.author }}
 		</a>
 
 		, {{ page.date | date: "%-d / "}}{% assign m = page.date | date: "%-m" %}{% case m %}{% when '1' %}january{% when '2' %}february{% when '3' %}march{% when '4' %}april{% when '5' %}may{% when '6' %}june{% when '7' %}july{% when '8' %}august{% when '9' %}september{% when '10' %}october{% when '11' %}november{% when '12' %}december{% endcase %}{{ page.date | date: " / %Y" }}
