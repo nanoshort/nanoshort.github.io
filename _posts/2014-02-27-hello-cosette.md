@@ -1,5 +1,6 @@
 ---
 layout: post
+author: 3
 title: "Hello, Cosette"
 quote: "Thinny reaches a new version, with mobile support and some other cool features."
 image:
