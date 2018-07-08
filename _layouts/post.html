@@ -18,11 +18,11 @@ article: true
 			<h2>{{ page.quote }}</h2>
 		{% endif %}
 		<a class="site-title" href="{{ site.url }}"><div class="site-icon-small" style="background-image: url({{ site.icon }});"></div>
-		{% if page.author == 1 %}
+		{% if page.author != 1 %}
 			{{ Jeison Ortiz }}
 		{% elseif page.author==2) %}
 			{{ Ricardo Restrepo }}
-		{% elseif page.author==2) %}
+		{% else page.author==2) %}
 			{{ Nano Team }}
 		{% endif %}
 		</a>
