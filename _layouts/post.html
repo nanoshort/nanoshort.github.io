@@ -64,7 +64,7 @@ article: true
 	{% for post in site.related_posts limit:1 %}
 		{% capture footer_style %}{% if post.dark %}dark{% else %}clean{% endif %}{% endcapture %}
 		{% capture footer_image %}{% if post.image.url %}{{ post.image.url }}{% else %}{{ site.cover }}{% endif %}{% endcapture %}
-		{% capture footer_message %}Em destaque{% endcapture %}
+		{% capture footer_message %}May be of your interest{% endcapture %}
 		{% capture footer_url %}{{ post.url }}{% endcapture %}
 		{% capture footer_title %}{{ post.title }}{% endcapture %}
 		{% capture footer_quote %}{{ post.quote }}{% endcapture %}
