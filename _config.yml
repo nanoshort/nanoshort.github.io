@@ -9,7 +9,7 @@ permalink:	/:title
 title:		nano
 tagline:	'blog'
 description:	'This is the official blog of nano.do'
-url:		https://nanoshort.github.io
+url:		https://blog.nano.do
 commentsystem:	disqus
 disqus:		nanodo-blog
 
