@@ -18,10 +18,10 @@ article: true
 			<h2>{{ page.quote }}</h2>
 		{% endif %}
 		<a class="site-title" href="{{ site.url }}"><div class="site-icon-small" style="background-image: url(
-		{% if page.author == 'Jeison Ortiz' %}
+		{% if page.author == 1 %}
 			{{ site.author_jeison.pic }}
 		{% else %}
-			{% if page.author == 'Ricardo Restrepo' %}
+			{% if page.author == 2 %}
 				{{ site.author_ricardo.pic }}
 			{% else %}
 				{{site.icon}}
@@ -29,8 +29,6 @@ article: true
 		{% endif %}"
 
 		></div>
-
-
 			{{ page.author }}
 		</a>
 
