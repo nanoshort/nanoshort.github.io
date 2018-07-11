@@ -3,7 +3,7 @@ markdown:	kramdown
 highlighter:	rouge
 
 # Permalinks
-permalink:	/blog/:title
+permalink:	/:title
 
 # Setup
 title:		nano
