@@ -1,6 +1,5 @@
 ---
 layout: post
-published: true
 
 author: Ricardo Restrepo
 img: 1
