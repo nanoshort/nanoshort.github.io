@@ -1,13 +1,8 @@
 ---
 layout: post
+
 author: Ricardo Restrepo
-{%
-
-1 = jeison,  2 = ricardo, 3 = nano
-
-%}
 img: 1
-
 
 title: Making application's icon smaller on GNOME Shell's top panel
 image:
