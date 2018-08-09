@@ -32,7 +32,7 @@ article: true
 			{{ page.author }}
 		</a>
 
-		, {{ page.date | date: "%-d / "}}{% assign m = page.date | date: "%-m" %}{% case m %}{% when '1' %}january{% when '2' %}february{% when '3' %}march{% when '4' %}april{% when '5' %}may{% when '6' %}june{% when '7' %}july{% when '8' %}august{% when '9' %}september{% when '10' %}october{% when '11' %}november{% when '12' %}december{% endcase %}{{ page.date | date: " / %Y" }}
+		, {{ page.date | date: "%-d / "}}{% assign m = page.date | date: "%-m" %}{% case m %}{% when '1' %}January{% when '2' %}February{% when '3' %}March{% when '4' %}April{% when '5' %}May{% when '6' %}June{% when '7' %}July{% when '8' %}August{% when '9' %}September{% when '10' %}October{% when '11' %}November{% when '12' %}December{% endcase %}{{ page.date | date: " / %Y" }}
 	</div>
 	{% if page.image.source %}
 	<div id="img-info" data-stellar-ratio="0.5">
