@@ -155,15 +155,15 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="2"
-     inkscape:cx="-32.027045"
-     inkscape:cy="50.397265"
+     inkscape:cx="83.943301"
+     inkscape:cy="58.860252"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1366"
-     inkscape:window-height="743"
-     inkscape:window-x="1366"
-     inkscape:window-y="0"
+     inkscape:window-height="718"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
      inkscape:window-maximized="1"
      units="px" />
   <metadata
@@ -189,8 +189,8 @@
        cx="57.5"
        cy="1065.0197"
        r="57.5"
-       inkscape:export-xdpi="13"
-       inkscape:export-ydpi="13" />
+       inkscape:export-xdpi="417"
+       inkscape:export-ydpi="417" />
     <g
        id="g995"
        inkscape:export-xdpi="96"
@@ -227,5 +227,13 @@
            inkscape:export-ydpi="13.356523" />
       </g>
     </g>
+    <path
+       style="fill:#1496ed;fill-opacity:1;stroke:none;stroke-width:0.91614354px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 7.9179687,1087.5196 0.25,1122.2696 52,1115.8592 Z"
+       id="path844"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-xdpi="417"
+       inkscape:export-ydpi="417" />
   </g>
 </svg>
