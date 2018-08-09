@@ -13,7 +13,7 @@ title: Home
 <div id="post-list">
 	{% for post in paginator.posts %}
 		<div>
-			<span class="post-date">{{ post.date | date: "%-d / "}}{% assign m = post.date | date: "%-m" %}{% case m %}{% when '1' %}january{% when '2' %}february{% when '3' %}march{% when '4' %}april{% when '5' %}may{% when '6' %}june{% when '7' %}july{% when '8' %}august{% when '9' %}september{% when '10' %}october{% when '11' %}november{% when '12' %}december{% endcase %}{{ post.date | date: " / %Y" }}</span>
+			<span class="post-date">{{ post.date | date: "%-d / "}}{% assign m = post.date | date: "%-m" %}{% case m %}{% when '1' %}January{% when '2' %}February{% when '3' %}March{% when '4' %}April{% when '5' %}May{% when '6' %}June{% when '7' %}July{% when '8' %}August{% when '9' %}September{% when '10' %}October{% when '11' %}November{% when '12' %}December{% endcase %}{{ post.date | date: " / %Y" }}</span>
 			<h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
 			<p class="post-description">{{ post.content | strip_html | truncatewords: 50 }}</p>
 		</div>
